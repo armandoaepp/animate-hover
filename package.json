@@ -1,5 +1,5 @@
 {
-  "name": "helper-hovers",
+  "name": "helper-hover",
   "version": "1.0.0",
   "description": "css classes of help for fronend",
   "main": "gulpfile.js",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/armandoaepp/helper-hovers.git"
+    "url": "git+https://github.com/armandoaepp/helper-hover.git"
   },
   "keywords": [
-    "helper-hovers"
+    "helper-hover"
   ],
   "author": "@armandoaepp",
   "license": "ISC",
