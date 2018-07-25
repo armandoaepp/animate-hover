@@ -1,0 +1,23 @@
+{
+  "name": "helper-hovers",
+  "version": "1.0.0",
+  "description": "css classes of help for fronend",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "node-sass src/scss/app.scss css/app.css",
+    "prod": "node-sass src/scss/app.scss css/app.min.css  --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armandoaepp/helper-hovers.git"
+  },
+  "keywords": [
+    "helper-hovers"
+  ],
+  "author": "@armandoaepp",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}

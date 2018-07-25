@@ -1,0 +1,91 @@
+ 
+ 
+  $border_width: 10px;
+  
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: $border_width;
+    width: 100%;
+  }
+
+  .circle::before {
+    content: '';
+    border: $border_width solid #28b198;
+    border-right-color: #746EBB;
+    border-bottom-color: #746EBB;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 50%;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .circle:hover::before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .circle .img-circle {
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  .circle .info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: $border_width;
+    bottom: $border_width;
+    left: $border_width;
+    right: $border_width;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .circle:hover .info {
+    opacity: 1;
+  }
+
+  .circle a,
+  .circle a:hover,
+  .circle .info {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  .circle .info .circle-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .circle .info .circle-text {
+    font-style: italic;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 5px;
+  }
+
+  .circle .info .circle-title,
+  .circle .info .circle-text {
+    margin: 0 20px;
+  } 
