@@ -1,0 +1,25 @@
+.ahvr-square {
+  position: relative;
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    background-color: $primary-color;
+    overflow: hidden;
+    transition: .5s ease;
+  }
+  .text {
+    color: $white;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
