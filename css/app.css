@@ -1,24 +1,16 @@
-.ahvr-fade-in-overlay {
+.ahvr-square {
   position: relative; }
-  .ahvr-fade-in-overlay .image {
+  .ahvr-square .image {
     display: block;
     width: 100%;
     height: auto; }
-  .ahvr-fade-in-overlay .overlay {
+  .ahvr-square .overlay {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA; }
-  .ahvr-fade-in-overlay:hover .overlay {
-    opacity: 1; }
-  .ahvr-fade-in-overlay .text {
-    color: #fff;
+    background-color: #2196F3;
+    overflow: hidden;
+    transition: .5s ease; }
+  .ahvr-square .middle {
+    color: #f3f3f3;
     font-size: 1.25rem;
     position: absolute;
     top: 50%;
@@ -28,48 +20,61 @@
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.ahvr-opacity-box {
-  position: relative; }
-  .ahvr-opacity-box .image {
-    opacity: 1;
+.ahvr-bg-primary-50,
+.ahvr-bg-primary-50 .overlay {
+  background: rgba(33, 150, 243, 0.5); }
+
+.ahvr-bg-secondary-50,
+.ahvr-bg-secondary-50 .overlay {
+  background: rgba(33, 33, 33, 0.5); }
+
+.ahvr-fade-in-overlay .overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0; }
+
+.ahvr-fade-in-overlay:hover .overlay {
+  opacity: 1; }
+
+.ahvr-opacity-box .image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden; }
+
+.ahvr-opacity-box .middle {
+  color: #212121;
+  opacity: 0; }
+
+.ahvr-opacity-box:hover .image {
+  opacity: 0.3; }
+
+.ahvr-opacity-box:hover .middle {
+  opacity: 1; }
+
+.ahvr-opacity-box .text {
+  color: #212121; }
+
+/* .ahvr-slide-overly {
+  position: relative;
+  .image {
     display: block;
     width: 100%;
     height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden; }
-  .ahvr-opacity-box .middle {
-    transition: .5s ease;
-    opacity: 0;
+  }
+  .overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center; }
-  .ahvr-opacity-box:hover .image {
-    opacity: 0.3; }
-  .ahvr-opacity-box:hover .middle {
-    opacity: 1; }
-  .ahvr-opacity-box .text {
-    color: #000;
-    font-size: 16px;
-    padding: 16px 32px; }
-
-.ahvr-slide-overly {
-  position: relative; }
-  .ahvr-slide-overly .image {
-    display: block;
-    width: 100%;
-    height: auto; }
-  .ahvr-slide-overly .overlay {
-    position: absolute;
-    background-color: #008CBA;
+    background-color: $primary-color;
     overflow: hidden;
+    transition: .5s ease;
     width: 100%;
     height: 0;
-    transition: .5s ease; }
-  .ahvr-slide-overly .text {
-    color: #fff;
+  }
+  .middle {
+    color: $white;
     font-size: 1.25rem;
     position: absolute;
     top: 50%;
@@ -77,9 +82,18 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center; }
-
+    text-align: center;
+  }
+} */
+/* .ahvr-slide-overly {
+  .overlay {
+    width: 100%;
+    height: 0;
+  }
+} */
 .ahvr-slide-overly-from-top .overlay {
+  width: 100%;
+  height: 0;
   bottom: 100%;
   left: 0;
   right: 0; }
@@ -89,6 +103,8 @@
   height: 100%; }
 
 .ahvr-slide-overly-from-bottom .overlay {
+  width: 100%;
+  height: 0;
   bottom: 0;
   left: 0;
   right: 0; }
@@ -116,41 +132,3 @@
 
 .ahvr-slide-overly-from-left:hover .overlay {
   width: 100%; }
-
-/*
-.ahvr-slide-overly-from-top {
-  position: relative;
-
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: $primary-color;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-  }
-
-  &:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
-  .text {
-    color: $white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-} */

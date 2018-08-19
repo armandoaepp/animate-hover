@@ -11,7 +11,7 @@
     overflow: hidden;
     transition: .5s ease;
   }
-  .text {
+  .middle {
     color: $white;
     font-size: 1.25rem;
     position: absolute;
@@ -22,4 +22,15 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+}
+
+//  bg
+.ahvr-bg-primary-50,
+.ahvr-bg-primary-50 .overlay{
+  background: rgba($primary-color, .5) ;
+}
+
+.ahvr-bg-secondary-50,
+.ahvr-bg-secondary-50 .overlay{
+  background: rgba($secondary-color, .5) ;
 }
