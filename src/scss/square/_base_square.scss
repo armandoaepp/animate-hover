@@ -24,13 +24,35 @@
   }
 }
 
-//  bg
+/* Background  */
+
+.ahvr-bg-secondary,
+.ahvr-bg-secondary .overlay {
+  background: $secondary-color;
+}
+
+/* Background Transparent  */
+
 .ahvr-bg-primary-50,
-.ahvr-bg-primary-50 .overlay{
-  background: rgba($primary-color, .5) ;
+.ahvr-bg-primary-50 .overlay {
+  background: rgba($primary-color, .5);
 }
 
 .ahvr-bg-secondary-50,
-.ahvr-bg-secondary-50 .overlay{
-  background: rgba($secondary-color, .5) ;
+.ahvr-bg-secondary-50 .overlay {
+  background: rgba($secondary-color, .5);
+}
+
+.ahvr-bg-black-50,
+.ahvr-bg-black-50 .overlay {
+  background: rgba($black, .5);
+  color: $white;
+}
+
+.ahvr-bg-white-50,
+.ahvr-bg-white-50 .overlay {
+  background: rgba($white, .5);
+  .middle {
+    color: $black;
+  }
 }
