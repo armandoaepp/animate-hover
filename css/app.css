@@ -1,8 +1,3 @@
-/* $primary-color: #2196F3 ;
-$secondary-color: #1976D2;
-
-$white: #f3f3f3;
-$black: #212121; */
 .ahvr-square {
   position: relative; }
   .ahvr-square .image {
@@ -23,12 +18,22 @@ $black: #212121; */
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    padding: 1rem; }
 
 /* Background  */
 .ahvr-bg-secondary,
 .ahvr-bg-secondary .overlay {
   background: #EFDC05; }
+
+.ahvr-bg-primary-light,
+.ahvr-bg-primary-light .overlay {
+  background: #82CDEE; }
+
+.ahvr-bg-primary-dark,
+.ahvr-bg-primary-dark .overlay {
+  background: #0474A5; }
 
 /* Background Transparent  */
 .ahvr-bg-primary-50,
@@ -93,17 +98,119 @@ $black: #212121; */
 .ahvr-slide-overly-from-left:hover .overlay {
   width: 100%; }
 
-.ahvr-fade-in-overlay .overlay {
+.ahvr-fade-overlay .overlay {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s; }
 
-.ahvr-fade-in-overlay:hover .overlay {
+.ahvr-fade-overlay:hover .overlay {
   opacity: 1; }
+
+.ahvr-fade-slide .overlay {
+  -webkit-transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  -ms-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  transition: background-color .5s;
+  background-color: transparent; }
+
+.ahvr-fade-slide:hover .overlay {
+  background-color: rgba(48, 169, 222, 0.7) !important; }
+
+.ahvr-fade-slide .middle {
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s; }
+
+.ahvr-fade-slide:hover .overlay .middle {
+  opacity: 1; }
+
+.ahvr-fade-slide-from-top .middle {
+  top: 0;
+  -webkit-transition: top .3s;
+  -moz-transition: top .3s;
+  -ms-transition: top .3s;
+  -o-transition: top .3s;
+  transition: top .3s; }
+
+.ahvr-fade-slide-from-top:hover .overlay .middle {
+  top: 50%; }
+
+.ahvr-fade-slide-from-bottom .middle {
+  top: 100% !important;
+  -webkit-transition: top .3s;
+  -moz-transition: top .3s;
+  -ms-transition: top .3s;
+  -o-transition: top .3s;
+  transition: top .3s; }
+
+.ahvr-fade-slide-from-bottom:hover .overlay .middle {
+  top: 50% !important; }
+
+.ahvr-fade-slide-from-left .middle {
+  left: 0;
+  -webkit-transition: left 0.3s !important;
+  -moz-transition: left 0.3s !important;
+  -ms-transition: left 0.3s !important;
+  -o-transition: left 0.3s !important;
+  transition: left 0.3 !important; }
+
+.ahvr-fade-slide-from-left:hover .overlay .middle {
+  left: 50%; }
+
+.ahvr-fade-slide-from-right .middle {
+  left: 100%;
+  -webkit-transition: left 0.3s !important;
+  -moz-transition: left 0.3s !important;
+  -ms-transition: left 0.3s !important;
+  -o-transition: left 0.3s !important;
+  transition: left 0.3 !important; }
+
+.ahvr-fade-slide-from-right:hover .overlay .middle {
+  left: 50%; }
+
+.ahvr-fade-slide-from-right-1 .overlay {
+  -webkit-transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  -ms-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  transition: background-color .5s;
+  background-color: transparent; }
+
+.ahvr-fade-slide-from-right-1:hover .overlay {
+  background-color: rgba(48, 169, 222, 0.7) !important; }
+
+.ahvr-fade-slide-from-right-1 .middle {
+  top: 50%;
+  left: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .3s, margin .3s;
+  -moz-transition: opacity .3s, margin .3s;
+  -ms-transition: opacity .3s, margin .3s;
+  -o-transition: opacity .3s, margin .3s;
+  transition: opacity .3s, margin .3s;
+  margin: 0;
+  margin-right: 0; }
+
+.ahvr-fade-slide-from-right-1:hover .overlay .middle {
+  opacity: 1;
+  margin: 0;
+  margin-right: 50%;
+  left: 50%; }
 
 .ahvr-opacity-box .image {
   opacity: 1;
@@ -122,3 +229,79 @@ $black: #212121; */
 
 .ahvr-opacity-box .text {
   color: #212121; }
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  width: 100%; }
+  .circle::before {
+    content: '';
+    border: 10px solid #30A9DE;
+    border-right-color: #EFDC05;
+    border-bottom-color: #EFDC05;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 50%;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out; }
+  .circle a,
+  .circle a:hover,
+  .circle .info {
+    color: #fff !important;
+    text-decoration: none !important; }
+  .circle .img-circle {
+    border-radius: 50%;
+    width: 100%; }
+  .circle .info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out; }
+  .circle:hover .info {
+    opacity: 1; }
+  .circle .info .circle-title {
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .circle .info .circle-text {
+    font-style: italic;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 5px; }
+  .circle .info .circle-title,
+  .circle .info .circle-text {
+    margin: 0 20px; }
+
+.circle.effect-1:hover::before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.primary-colored .info {
+  background: rgba(48, 169, 222, 0.6); }
+
+.secondary-colored .info {
+  background: rgba(239, 220, 5, 0.6); }

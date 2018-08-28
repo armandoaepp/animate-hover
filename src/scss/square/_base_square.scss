@@ -21,6 +21,8 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
+    padding: 1rem ;
   }
 }
 
@@ -29,6 +31,16 @@
 .ahvr-bg-secondary,
 .ahvr-bg-secondary .overlay {
   background: $secondary-color;
+}
+
+.ahvr-bg-primary-light,
+.ahvr-bg-primary-light .overlay {
+  background: $primary-light-color;
+}
+
+.ahvr-bg-primary-dark,
+.ahvr-bg-primary-dark .overlay {
+  background: $primary-dark-color;
 }
 
 /* Background Transparent  */
