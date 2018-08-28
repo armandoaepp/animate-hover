@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+      /* background: url("http://www.theabsolutelongestwebdomainnameinthewholegoddamnfuckinguniverse.com/wp-content/uploads/2010/08/hot_chick.jpg"); */
+      width: 600px;
+      height: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hover {
+      background: #66FF33;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+      position: absolute;
+    }
+
+    div:hover>.hover {
+      opacity: 0.4;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img src="http://www.theabsolutelongestwebdomainnameinthewholegoddamnfuckinguniverse.com/wp-content/uploads/2010/08/hot_chick.jpg" alt="">
+    <div class="hover"></div>
+  </div>
+
+  <!-- <div class="ahvr-square ahvr-fade-in-overlay">
+    <img class="image" src="../images/img_avatar.png" alt="Avatar">
+    <div class="overlay">
+      <div class="middle">Hello @armandoaepp </div>
+    </div>
+  </div> -->
+</body>
+
+</html>

@@ -21,7 +21,31 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
+    padding: 1rem;
   }
+}
+
+/*
+=========================================================
+zoom image
+=========================================================
+*/
+
+.ahvr-square.ahvr-zoom-image {
+  -webkit-transition: transform .3s;
+  -moz-transition: transform .3s;
+  -ms-transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+}
+
+.ahvr-square.ahvr-zoom-image:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Background  */
@@ -29,6 +53,16 @@
 .ahvr-bg-secondary,
 .ahvr-bg-secondary .overlay {
   background: $secondary-color;
+}
+
+.ahvr-bg-primary-light,
+.ahvr-bg-primary-light .overlay {
+  background: $primary-light-color;
+}
+
+.ahvr-bg-primary-dark,
+.ahvr-bg-primary-dark .overlay {
+  background: $primary-dark-color;
 }
 
 /* Background Transparent  */
