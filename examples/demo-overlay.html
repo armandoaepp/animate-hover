@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .lk-pr-home a {
+      /* background-color: #610000; */
+      border: 1px solid #f1f1f1;
+      display: inline-block;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+    }
+
+    .lk-pr-home a .overly {
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      -webkit-transition: background-color .3s;
+      -moz-transition: background-color .3s;
+      -ms-transition: background-color .3s;
+      -o-transition: background-color .3s;
+      transition: background-color .3s;
+      z-index: 5;
+    }
+
+    .lk-pr-home a .overly:hover {
+      background-color: rgba(97, 0, 0, 0.7);
+    }
+
+    .lk-pr-home a .overly:hover i {
+      margin: 35% auto 0;
+      opacity: 1;
+    }
+
+    .lk-pr-home a .overly:hover+img {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+
+    .lk-pr-home .middle {
+      color: white;
+      display: inline-block;
+      height: 60px;
+      line-height: 62px;
+      margin: 90% auto 0;
+      opacity: 0;
+      text-align: center;
+      width: 60px;
+      -webkit-transition: opacity .3s, margin .3s;
+      -moz-transition: opacity .3s, margin .3s;
+      -ms-transition: opacity .3s, margin .3s;
+      -o-transition: opacity .3s, margin .3s;
+      transition: opacity .3s, margin .3s;
+    }
+
+     
+  </style>
+</head>
+
+<body>
+
+
+    <div class="small-12 medium-6 column lk-pr-home">
+        <a href="escuela-de-futbol">
+          <div class="overly text-center">
+            div.
+          </div>
+          <img src="../images/img_avatar.png" alt="Academia Oficial Juan Aurich">
+        </a>
+      </div>
+      <div class="small-12 medium-6 column lk-pr-home">
+        <a href="#">
+          <div class="overly text-center"><i class="fa fa-link fa-2x rdT bgPr"></i><h3 class="ft_equal ft_bl">Tienda
+              Virtual
+              <br> <span class="ft_opensans_l" style="font-size:13px !important;">- pronto -</span> </h3>
+          </div>
+          <img src="../images/img_avatar.png" alt="Tienda Virtual">
+        </a>
+      </div>
+
+</body>
+
+</html>
