@@ -40,10 +40,8 @@ a:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     opacity: 0;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
-    padding: 0 $border_width*2;
+    padding: 0 $border_width*2; 
+    pointer-events: none; 
   }
   &:hover .info {
     opacity: 1;
@@ -84,93 +82,88 @@ a:hover {
   }
 }
 
-.circle.effect-1:hover .spinner {
-  
-  background-clip: content-box;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+.circle.effect-1 {
+  .info {
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+  }
+  &:hover .spinner {
+    background-clip: content-box;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
 
 /* effect 2 */
 
 .circle.effect-2 {
-  padding: 0 !important; 
-
-  .spinner { 
-     border:  $border_width solid rgba( $white, 0.5) !important;
+  padding: 0 !important;
+  .spinner {
+    border: $border_width solid rgba( $white, 0.5) !important;
   }
   &:hover .spinner {
     background-clip: border-box;
-    border:  $border_width solid rgba( $white, 0.18) !important;
-
+    border: $border_width solid rgba( $white, 0.18) !important;
   }
 }
 
-
-.circle.effect-2:hover .circle-title  ,
-.circle.effect-2:hover .circle-text {
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-  visibility: visible;
+.circle.effect-2 { 
+  .info{
+    
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  &:hover .circle-title,
+  &:hover .circle-text {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    visibility: visible;
+  }
 }
 
 /* from_left_and_right */
-.circle.from_left_and_right .info .circle-title {
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-.circle.from_left_and_right .info .circle-text {
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.circle.from_left_and_right:hover .circle-title {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-}
-.circle.from_left_and_right:hover .circle-text {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
+
+.circle.ahvr-slide-from-left-and-right .circle-title {
+  @include translateX(-100%);
 }
 
-/* top_to_bottom */
-.circle.top_to_bottom .info .circle-title {
+.circle.ahvr-slide-from-left-and-right:hover .circle-title {
+  @include translateX(0);
+}
+
+.circle.ahvr-slide-from-left-and-right .circle-text {
+  @include translateX(100%);
+}
+
+.circle.ahvr-slide-from-left-and-right:hover .circle-text {
+  @include translateX(0);
+}
+
+/* from-top */
+
+.circle.ahvr-slide-from-top .circle-title {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-.circle.top_to_bottom .info .circle-text {
+
+.circle.ahvr-slide-from-top .circle-text {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-.circle.top_to_bottom:hover .circle-title {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
-}
-.circle.top_to_bottom:hover .circle-text {
+
+.circle.ahvr-slide-from-top:hover .circle-title {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -178,29 +171,41 @@ a:hover {
   transform: translateY(0);
 }
 
-/*  bottom_to_top */
-.circle.bottom_to_top .info .circle-title {
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
-.circle.bottom_to_top .info .circle-text {
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
-}
-.circle.bottom_to_top:hover .circle-title {
+.circle.ahvr-slide-from-top:hover .circle-text {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-.circle.bottom_to_top:hover .circle-text {
+
+/*  from-bottom */
+
+.circle.ahvr-slide-from-bottom .circle-title {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.circle.ahvr-slide-from-bottom .circle-text {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.circle.ahvr-slide-from-bottom:hover .circle-title {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.circle.ahvr-slide-from-bottom:hover .circle-text {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);

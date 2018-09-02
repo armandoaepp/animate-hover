@@ -37,10 +37,8 @@ a:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     opacity: 0;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
-    padding: 0 20px; }
+    padding: 0 20px;
+    pointer-events: none; }
   .circle:hover .info {
     opacity: 1; }
   .circle .info .circle-title {
@@ -70,6 +68,11 @@ a:hover {
 .circle.white-colored .info .circle-text {
   border-top-color: rgba(33, 33, 33, 0.3) !important; }
 
+.circle.effect-1 .info {
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out; }
+
 .circle.effect-1:hover .spinner {
   background-clip: content-box;
   -webkit-transform: rotate(180deg);
@@ -87,6 +90,11 @@ a:hover {
     background-clip: border-box;
     border: 10px solid rgba(243, 243, 243, 0.18) !important; }
 
+.circle.effect-2 .info {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out; }
+
 .circle.effect-2:hover .circle-title,
 .circle.effect-2:hover .circle-text {
   -webkit-transition: all 0.35s ease-in-out;
@@ -95,86 +103,70 @@ a:hover {
   visibility: visible; }
 
 /* from_left_and_right */
-.circle.from_left_and_right .info .circle-title {
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
+.circle.ahvr-slide-from-left-and-right .circle-title {
   transform: translateX(-100%); }
 
-.circle.from_left_and_right .info .circle-text {
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
+.circle.ahvr-slide-from-left-and-right:hover .circle-title {
+  transform: translateX(0); }
+
+.circle.ahvr-slide-from-left-and-right .circle-text {
   transform: translateX(100%); }
 
-.circle.from_left_and_right:hover .circle-title {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
+.circle.ahvr-slide-from-left-and-right:hover .circle-text {
   transform: translateX(0); }
 
-.circle.from_left_and_right:hover .circle-text {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0); }
-
-/* top_to_bottom */
-.circle.top_to_bottom .info .circle-title {
+/* from-top */
+.circle.ahvr-slide-from-top .circle-title {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%); }
 
-.circle.top_to_bottom .info .circle-text {
+.circle.ahvr-slide-from-top .circle-text {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%); }
 
-.circle.top_to_bottom:hover .circle-title {
+.circle.ahvr-slide-from-top:hover .circle-title {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0); }
 
-.circle.top_to_bottom:hover .circle-text {
+.circle.ahvr-slide-from-top:hover .circle-text {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0); }
 
-/*  bottom_to_top */
-.circle.bottom_to_top .info .circle-title {
+/*  from-bottom */
+.circle.ahvr-slide-from-bottom .circle-title {
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
   -ms-transform: translateY(100%);
   -o-transform: translateY(100%);
   transform: translateY(100%); }
 
-.circle.bottom_to_top .info .circle-text {
+.circle.ahvr-slide-from-bottom .circle-text {
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
   -ms-transform: translateY(100%);
   -o-transform: translateY(100%);
   transform: translateY(100%); }
 
-.circle.bottom_to_top:hover .circle-title {
+.circle.ahvr-slide-from-bottom:hover .circle-title {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0); }
 
-.circle.bottom_to_top:hover .circle-text {
+.circle.ahvr-slide-from-bottom:hover .circle-text {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
