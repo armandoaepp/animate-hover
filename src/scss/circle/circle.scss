@@ -40,8 +40,8 @@ a:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     opacity: 0;
-    padding: 0 $border_width*2; 
-    pointer-events: none; 
+    padding: 0 $border_width*2;
+    pointer-events: none;
   }
   &:hover .info {
     opacity: 1;
@@ -111,9 +111,9 @@ a:hover {
   }
 }
 
-.circle.effect-2 { 
+.circle.effect-2 {
   .info{
-    
+
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
