@@ -1,0 +1,46 @@
+/* EFECCT-3 */
+
+.circle.effect-4 {
+  padding: 0 !important;
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+  .spinner {
+    border: $border_width solid rgba( $white, 0.5) !important;
+    background-color: transparent;
+  }
+  &:hover .spinner {
+    background-clip: border-box;
+    border: $border_width solid rgba( $white, 0.18) !important;
+    background-color: transparent;
+  }
+}
+
+.circle.effect-4 {
+  .info-content {
+    transition: all 0.55s ease-in-out;
+    transform-style: preserve-3d;
+    transform: rotate3d(0, 1, 0, -180deg);
+    .info{
+      transition: all 0.5s ease-in;
+      visibility: hidden;
+    }
+  }
+  &:hover .info-content {
+    background: rgba(0, 0, 0, 0.6);
+    transform: rotate3d(0, 1, 0, 0deg);
+    .info{
+      visibility: visible;
+    }
+
+  }
+  &:hover.primary-colored .info-content {
+    background: rgba($primary-color, 0.6) !important;
+  }
+  &:hover.white-colored .info-content {
+    background: rgba($white, 0.6) !important;
+  }
+  &:hover.black-colored .info-content {
+    background: rgba($black, 0.6) !important;
+  }
+}

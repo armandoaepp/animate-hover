@@ -1,7 +1,5 @@
 @import 'variables' ;
-// @import 'circle' ;
+@import 'mixins/app.mixins' ;
 
-@import 'square' ;
-@import 'circle' ;
-
-
+@import 'square/app-square' ;
+@import 'circle/app-circle' ;
