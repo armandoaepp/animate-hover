@@ -1,0 +1,47 @@
+.figure-box figure {
+  margin: 0;
+}
+
+.figure-box {
+  overflow: hidden;
+  .image {
+    transition: transform 0.5s ease-out;
+  }
+ 
+  .info {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #fff;
+    padding: 0.75rem;
+    position: absolute !important;
+    min-width: 100%;
+    max-height: 100%;
+    transform: translateY(100%) translateY(-50px) translateZ(0);
+    transition: transform 0.5s ease-out;
+    .info-title {
+      text-align: center;
+    }
+    .info-descripcion {
+      text-align: justify;
+    }
+  }
+  &:hover {
+    .image {
+      transform: scale(1.1);
+    }
+    .info {
+      transform: translateY(0) translateZ(0);
+    }
+    .info-h-100 {
+      overflow: auto;
+      height: 100%;
+    }
+    .info-h-100 .info-center {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+ 

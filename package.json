@@ -16,7 +16,9 @@
   ],
   "author": "@armandoaepp",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^6.4.1"
+  },
   "devDependencies": {
     "node-sass": "^4.9.2"
   }
