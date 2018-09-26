@@ -1,12 +1,9 @@
+$border_width: 10px !default;
 
-$border_width: 10px;
+$white: #f3f3f3 !default;
+$black: #212121 !default;
 
-
-
-$white              : #f3f3f3;
-$black              : #212121;
-
-$primary-color      : #30A9DE ;
-$primary-light-color: #82CDEE ;
-$primary-dark-color : #0474A5 ;
-$secondary-color    : #EFDC05;
+$primary-color      : #30A9DE !default;
+$primary-light-color: #82CDEE !default;
+$primary-dark-color : #0474A5 !default;
+$secondary-color    : #EFDC05 !default;
