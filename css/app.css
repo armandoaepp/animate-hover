@@ -6,7 +6,7 @@
     height: auto; }
   .ahvr-square .overlay {
     position: absolute;
-    background-color: #30A9DE;
+    background-color: #30A9DE !important;
     overflow: hidden;
     transition: .5s ease; }
   .ahvr-square .middle {
@@ -21,14 +21,6 @@
     text-align: center;
     width: 100%;
     padding: 1rem; }
-  .ahvr-square .middle-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.5rem;
-    overflow: hidden;
-    height: 60px; }
 
 /*
 =========================================================
@@ -50,35 +42,40 @@ zoom image
   transform: scale(1.05); }
 
 /* Background  */
+.ahvr-bg-primary,
+.ahvr-bg-primary .overlay {
+  background: #30A9DE !important; }
+
 .ahvr-bg-secondary,
 .ahvr-bg-secondary .overlay {
-  background: #EFDC05; }
+  background: #EFDC05 !important; }
 
 .ahvr-bg-primary-light,
 .ahvr-bg-primary-light .overlay {
-  background: #82CDEE; }
+  background: #82CDEE !important; }
 
 .ahvr-bg-primary-dark,
 .ahvr-bg-primary-dark .overlay {
-  background: #0474A5; }
+  background: #0474A5 !important; }
 
 /* Background Transparent  */
 .ahvr-bg-primary-50,
 .ahvr-bg-primary-50 .overlay {
-  background: rgba(48, 169, 222, 0.5); }
+  background: rgba(48, 169, 222, 0.5) !important; }
 
 .ahvr-bg-secondary-50,
 .ahvr-bg-secondary-50 .overlay {
-  background: rgba(239, 220, 5, 0.5); }
+  background: rgba(239, 220, 5, 0.5) !important; }
 
 .ahvr-bg-black-50,
 .ahvr-bg-black-50 .overlay {
-  background: rgba(33, 33, 33, 0.5);
+  background: rgba(33, 33, 33, 0.5) !important;
   color: #f3f3f3; }
 
 .ahvr-bg-white-50,
 .ahvr-bg-white-50 .overlay {
-  background: rgba(243, 243, 243, 0.5); }
+  background: rgba(243, 243, 243, 0.5) !important;
+  color: #212121 !important; }
   .ahvr-bg-white-50 .middle,
   .ahvr-bg-white-50 .overlay .middle {
     color: #212121; }
@@ -266,7 +263,7 @@ zoom image
     transition: transform 0.5s ease-out; }
   .figure-box .info {
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(33, 33, 33, 0.5);
     bottom: 0;
     color: #fff;
     padding: 0.75rem;
