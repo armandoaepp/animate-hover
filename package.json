@@ -4,8 +4,14 @@
   "description": "css classes of help for fronend",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "node-sass src/scss/app.scss css/app.css",
-    "prod": "node-sass src/scss/app.scss css/app.min.css  --output-style compressed"
+    "app": "node-sass src/scss/app.scss css/app.css",
+    "circle": "node-sass src/scss/circle.scss css/circle.css",
+    "square": "node-sass src/scss/square.scss css/square.css",
+    "dev": "npm run app & npm run circle & npm run square ",
+    "app-min": "node-sass src/scss/app.scss css/app-min.css --output-style compressed",
+    "circle-min": "node-sass src/scss/circle.scss css/circle-min.css --output-style compressed",
+    "square-min": "node-sass src/scss/square.scss css/square-min.css --output-style compressed",
+    "prod": "npm run app-min & npm run circle-min & npm run square-min " 
   },
   "repository": {
     "type": "git",
