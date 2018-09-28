@@ -1,6 +1,6 @@
 {
   "name": "helper-hover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "css classes of help for fronend",
   "main": "gulpfile.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "app-min": "node-sass src/scss/app.scss css/app-min.css --output-style compressed",
     "circle-min": "node-sass src/scss/circle.scss css/circle-min.css --output-style compressed",
     "square-min": "node-sass src/scss/square.scss css/square-min.css --output-style compressed",
-    "prod": "npm run app-min & npm run circle-min & npm run square-min " 
+    "prod": "npm run app-min & npm run circle-min & npm run square-min "
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   ],
   "author": "@armandoaepp",
   "license": "ISC",
-  "dependencies": { 
+  "dependencies": {
   },
   "devDependencies": {
     "node-sass": "^4.9.2"
