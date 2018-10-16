@@ -1,0 +1,72 @@
+.ahvr-boxed-image {
+  .overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($black, .75);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out
+  }
+  &:hover .overlay {
+    background-color: rgba($black, .45);
+  }
+  .middle {
+    .boxed-icon {
+      font-size: 2.5rem;
+    }
+    .boxed-title {
+      font-weight: 600;
+    }
+    .boxed-text {
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+  &:hover>* {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  &:hover.boxed-pulse>* {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+
+  &:hover.boxed-zoom-in>* {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+}
+
+.ahvr-bg-primary-box {
+  .overlay {
+    background-color: rgba($primary-color, .75);
+  }
+  &:hover .overlay {
+    background-color: rgba($primary-color, .45);
+  }
+}
+
+.ahvr-bg-secondary-box {
+  .overlay {
+    background-color: rgba($secondary-color, .75);
+  }
+  &:hover .overlay {
+    background-color: rgba($secondary-color, .45);
+  }
+}
+
+.ahvr-bg-white-box {
+  .overlay {
+    background-color: rgba($white, .75);
+  }
+  &:hover .overlay {
+    background-color: rgba($white, .45);
+  }
+}

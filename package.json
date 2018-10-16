@@ -23,6 +23,7 @@
   "author": "@armandoaepp",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.7.0"
   },
   "devDependencies": {
     "node-sass": "^4.9.2"

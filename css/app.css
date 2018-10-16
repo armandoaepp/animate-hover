@@ -6,12 +6,11 @@
     height: auto; }
   .ahvr-square .overlay {
     position: absolute;
-    background-color: #30A9DE !important;
+    background-color: #30A9DE;
     overflow: hidden;
     transition: .5s ease; }
   .ahvr-square .middle {
     color: #f3f3f3;
-    font-size: 1.25rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -295,6 +294,64 @@ zoom image
 
 .figure-box.figure-black-primary:hover .info {
   background-color: rgba(48, 169, 222, 0.85) !important; }
+
+.ahvr-boxed-image .overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.75);
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+
+.ahvr-boxed-image:hover .overlay {
+  background-color: rgba(33, 33, 33, 0.45); }
+
+.ahvr-boxed-image .middle .boxed-icon {
+  font-size: 2.5rem; }
+
+.ahvr-boxed-image .middle .boxed-title {
+  font-weight: 600; }
+
+.ahvr-boxed-image .middle .boxed-text {
+  font-weight: 300;
+  font-size: 1rem; }
+
+.ahvr-boxed-image:hover > * {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ahvr-boxed-image:hover.boxed-pulse > * {
+  -webkit-animation-name: pulse;
+  animation-name: pulse; }
+
+.ahvr-boxed-image:hover.boxed-zoom-in > * {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
+.ahvr-bg-primary-box .overlay {
+  background-color: rgba(48, 169, 222, 0.75); }
+
+.ahvr-bg-primary-box:hover .overlay {
+  background-color: rgba(48, 169, 222, 0.45); }
+
+.ahvr-bg-secondary-box .overlay {
+  background-color: rgba(239, 220, 5, 0.75); }
+
+.ahvr-bg-secondary-box:hover .overlay {
+  background-color: rgba(239, 220, 5, 0.45); }
+
+.ahvr-bg-white-box .overlay {
+  background-color: rgba(243, 243, 243, 0.75); }
+
+.ahvr-bg-white-box:hover .overlay {
+  background-color: rgba(243, 243, 243, 0.45); }
 
 .ahvr-item a,
 .ahvr-item a:hover {
