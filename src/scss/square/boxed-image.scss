@@ -27,6 +27,7 @@
       font-size: 1rem;
     }
   }
+
   &:hover>* {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -42,6 +43,38 @@
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
   }
+
+  &:hover.boxed-bounce>* {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+
+  &:hover.boxed-rubber-band>* {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+  }
+
+  &:hover.boxed-swing>* {
+    -webkit-animation-name: swing;
+    animation-name: swing;
+  }
+
+  &:hover.boxed-shake>* {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+  }
+
+  &:hover.boxed-wobble>* {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+  }
+
+  &:hover.boxed-jello>* {
+    -webkit-animation-name: jello;
+    animation-name: jello;
+  }
+
+
 }
 
 .ahvr-bg-primary-box {
@@ -68,5 +101,8 @@
   }
   &:hover .overlay {
     background-color: rgba($white, .45);
+  }
+  .middle{
+    color: $black ;
   }
 }
