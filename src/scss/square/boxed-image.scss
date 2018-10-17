@@ -28,55 +28,17 @@
     }
   }
 
-  &:hover>* {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  &:hover.boxed-pulse>* {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-  }
-
-  &:hover.boxed-zoom-in>* {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-  }
-
-  &:hover.boxed-bounce>* {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-  }
-
-  &:hover.boxed-rubber-band>* {
-    -webkit-animation-name: rubberBand;
-    animation-name: rubberBand;
-  }
-
-  &:hover.boxed-swing>* {
-    -webkit-animation-name: swing;
-    animation-name: swing;
-  }
-
-  &:hover.boxed-shake>* {
-    -webkit-animation-name: shake;
-    animation-name: shake;
-  }
-
-  &:hover.boxed-wobble>* {
-    -webkit-animation-name: wobble;
-    animation-name: wobble;
-  }
-
-  &:hover.boxed-jello>* {
-    -webkit-animation-name: jello;
-    animation-name: jello;
-  }
-
-
 }
 
+.ahvr-boxed-image.boxed-image-in {
+  .overlay {
+    opacity: 0;
+  }
+  &:hover .overlay {
+    opacity: 1;
+  }
+}
+/* bg-opacities ======================================== */
 .ahvr-bg-primary-box {
   .overlay {
     background-color: rgba($primary-color, .75);

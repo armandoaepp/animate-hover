@@ -1,0 +1,212 @@
+.ahvr-animated {
+  &.animated-box:hover>* {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+
+.ahvr-animated {
+  /* Attention Seekers */
+  &:hover .animated-bounce,
+  &:hover.animated-bounce>* {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+  &:hover .animated-flash,
+  &:hover.animated-flash>* {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+  }
+  &:hover .animated-pulse,
+  &:hover.animated-pulse>* {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+  &:hover .animated-rubberBand,
+  &:hover.animated-rubberBand>* {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+  }
+  &:hover .animated-shake,
+  &:hover.animated-shake>* {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+  }
+  &:hover .animated-swing,
+  &:hover.animated-swing>* {
+    -webkit-animation-name: swing;
+    animation-name: swing;
+  }
+  &:hover .animated-tada,
+  &:hover.animated-tada>* {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+  }
+  &:hover .animated-wobble,
+  &:hover.animated-wobble>* {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+  }
+  &:hover .animated-jello,
+  &:hover.animated-jello>* {
+    -webkit-animation-name: jello;
+    animation-name: jello;
+  }
+  /* Rotating Entrances */
+  &:hover .animated-rotateIn,
+  &:hover.animated-rotateIn>* {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+  }
+  &:hover .animated-rotateInDownLeft,
+  &:hover.animated-rotateInDownLeft>* {
+    -webkit-animation-name: rotateInDownLeft;
+    animation-name: rotateInDownLeft;
+  }
+  &:hover .animated-rotateInDownRight,
+  &:hover.animated-rotateInDownRight>* {
+    -webkit-animation-name: rotateInDownRight;
+    animation-name: rotateInDownRight;
+  }
+  &:hover .animated-rotateInUpLeft,
+  &:hover.animated-rotateInUpLeft>* {
+    -webkit-animation-name: rotateInUpLeft;
+    animation-name: rotateInUpLeft;
+  }
+  &:hover .animated-rotateInUpRight,
+  &:hover.animated-rotateInUpRight>* {
+    -webkit-animation-name: rotateInUpRight;
+    animation-name: rotateInUpRight;
+  }
+  /* bounces */
+  &:hover .animated-bounceIn,
+  &:hover.animated-bounceIn>* {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+  }
+  &:hover .animated-bounceInDown,
+  &:hover.animated-bounceInDown>* {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+  }
+  &:hover .animated-bounceInLeft,
+  &:hover.animated-bounceInLeft>* {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+  }
+  &:hover .animated-bounceInRight,
+  &:hover.animated-bounceInRight>* {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+  }
+  &:hover .animated-bounceInUp,
+  &:hover.animated-bounceInUp>* {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+  }
+  &:hover .animated-bounceOut,
+  &:hover.animated-bounceOut>* {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceOut;
+    animation-name: bounceOut;
+  }
+  &:hover .animated-bounceOutDown,
+  &:hover.animated-bounceOutDown>* {
+    -webkit-animation-name: bounceOutDown;
+    animation-name: bounceOutDown;
+  }
+  &:hover .animated-bounceOutLeft,
+  &:hover.animated-bounceOutLeft>* {
+    -webkit-animation-name: bounceOutLeft;
+    animation-name: bounceOutLeft;
+  }
+  &:hover .animated-bounceOutRight,
+  &:hover.animated-bounceOutRight>* {
+    -webkit-animation-name: bounceOutRight;
+    animation-name: bounceOutRight;
+  }
+  &:hover .animated-bounceOutUp,
+  &:hover.animated-bounceOutUp>* {
+    -webkit-animation-name: bounceOutUp;
+    animation-name: bounceOutUp;
+  }
+  /* Rotating Exits */
+  &:hover .animated-rotateOut,
+  &:hover.rotateOu.animated->* {
+    -webkit-animation-name: rotateOut;
+    animation-name: rotateOut;
+  }
+  &:hover .animated-rotateOutDownLeft,
+  &:hover.animated-rotateOutDownLeft>* {
+    -webkit-animation-name: rotateOutDownLeft;
+    animation-name: rotateOutDownLeft;
+  }
+  &:hover .animated-rotateOutDownRight,
+  &:hover.animated-rotateOutDownRight>* {
+    -webkit-animation-name: rotateOutDownRight;
+    animation-name: rotateOutDownRight;
+  }
+  &:hover .animated-rotateOutUpLeft,
+  &:hover.animated-rotateOutUpLeft>* {
+    -webkit-animation-name: rotateOutUpLeft;
+    animation-name: rotateOutUpLeft;
+  }
+  &:hover .animated-rotateOutUpRight,
+  &:hover.animated-rotateOutUpRight>* {
+    -webkit-animation-name: rotateOutUpRight;
+    animation-name: rotateOutUpRight;
+  }
+  /* Sliding Entrances */
+  &:hover .animated-slideInDown,
+  &:hover.animated-slideInDown>* {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+  }
+  &:hover .animated-slideInLeft,
+  &:hover.animated-slideInLeft>* {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+  }
+  &:hover .animated-slideInRight,
+  &:hover.animated-slideInRight>* {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+  }
+  &:hover .animated-slideInUp,
+  &:hover.animated-slideInUp>* {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+  }
+  /* Sliding Exits */
+  &:hover .animated-slideOutDown,
+  &:hover.animated-slideOutDown>* {
+    -webkit-animation-name: slideOutDown;
+    animation-name: slideOutDown;
+  }
+  &:hover .animated-slideOutLeft,
+  &:hover.animated-slideOutLeft>* {
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft;
+  }
+  &:hover .animated-slideOutRight,
+  &:hover.animated-slideOutRight>* {
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+  }
+  &:hover .animated-slideOutUp,
+  &:hover.animated-slideOutUp>* {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+  }
+  /*Zoom Entrances  */
+  &:hover .animated-zoomIn,
+  &:hover.animated-zoomIn>* {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+}
