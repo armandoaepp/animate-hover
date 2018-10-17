@@ -1,21 +1,21 @@
 {
   "name": "animate-hover",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "animate css classes hover of help for fronend",
   "main": "gulpfile.js",
   "scripts": {
     "clean": "rimraf vendor",
     "vendor": "vendor-copy",
-    "app-full": "node-sass src/scss/app-full.scss css/app-full.css",
-    "app": "node-sass src/scss/app.scss css/app.css",
-    "circle": "node-sass src/scss/circle.scss css/circle.css",
-    "square": "node-sass src/scss/square.scss css/square.css",
-    "dev": "npm run vendor & npm run app & npm run circle & npm run square & npm run app-full",
-    "app-min": "node-sass src/scss/app.scss css/app-min.css --output-style compressed",
-    "circle-min": "node-sass src/scss/circle.scss css/circle-min.css --output-style compressed",
-    "square-min": "node-sass src/scss/square.scss css/square-min.css --output-style compressed",
-    "app-full-min": "node-sass src/scss/app-full.scss css/app-full-min.css --output-style compressed",
-    "prod": "npm run vendor & npm run app-min & npm run circle-min & npm run square-min & npm run app-full-min "
+    "animate-full": "node-sass src/scss/animate-full.scss css/animate-full.css",
+    "animate": "node-sass src/scss/animate-hover.scss css/animate-hover.css",
+    "circle": "node-sass src/scss/animate-circle.scss css/animate-circle.css",
+    "square": "node-sass src/scss/animate-square.scss css/animate-square.css",
+    "dev": "npm run vendor & npm run animate & npm run circle & npm run square & npm run animate-full",
+    "animate-min": "node-sass src/scss/animate-hover.scss css/animate-hover.min.css --output-style compressed",
+    "circle-min": "node-sass src/scss/animate-circle.scss css/animate-circle.min.css --output-style compressed",
+    "square-min": "node-sass src/scss/animate-square.scss css/animate-square.min.css --output-style compressed",
+    "animate-full-min": "node-sass src/scss/animate-full.scss css/animate-full.min.css --output-style compressed",
+    "prod": "npm run vendor & npm run animate-min & npm run circle-min & npm run square-min & npm run animate-full-min "
   },
   "repository": {
     "type": "git",

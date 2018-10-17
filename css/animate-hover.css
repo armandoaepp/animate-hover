@@ -1,3 +1,174 @@
+.ahvr-animated.animated-box:hover > * {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ahvr-animated {
+  /* Attention Seekers */
+  /* Rotating Entrances */
+  /* bounces */
+  /* Rotating Exits */
+  /* Sliding Entrances */
+  /* Sliding Exits */
+  /*Zoom Entrances  */ }
+  .ahvr-animated:hover .animated-bounce,
+  .ahvr-animated:hover.animated-bounce > * {
+    -webkit-animation-name: bounce;
+    animation-name: bounce; }
+  .ahvr-animated:hover .animated-flash,
+  .ahvr-animated:hover.animated-flash > * {
+    -webkit-animation-name: flash;
+    animation-name: flash; }
+  .ahvr-animated:hover .animated-pulse,
+  .ahvr-animated:hover.animated-pulse > * {
+    -webkit-animation-name: pulse;
+    animation-name: pulse; }
+  .ahvr-animated:hover .animated-rubberBand,
+  .ahvr-animated:hover.animated-rubberBand > * {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand; }
+  .ahvr-animated:hover .animated-shake,
+  .ahvr-animated:hover.animated-shake > * {
+    -webkit-animation-name: shake;
+    animation-name: shake; }
+  .ahvr-animated:hover .animated-swing,
+  .ahvr-animated:hover.animated-swing > * {
+    -webkit-animation-name: swing;
+    animation-name: swing; }
+  .ahvr-animated:hover .animated-tada,
+  .ahvr-animated:hover.animated-tada > * {
+    -webkit-animation-name: tada;
+    animation-name: tada; }
+  .ahvr-animated:hover .animated-wobble,
+  .ahvr-animated:hover.animated-wobble > * {
+    -webkit-animation-name: wobble;
+    animation-name: wobble; }
+  .ahvr-animated:hover .animated-jello,
+  .ahvr-animated:hover.animated-jello > * {
+    -webkit-animation-name: jello;
+    animation-name: jello; }
+  .ahvr-animated:hover .animated-rotateIn,
+  .ahvr-animated:hover.animated-rotateIn > * {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn; }
+  .ahvr-animated:hover .animated-rotateInDownLeft,
+  .ahvr-animated:hover.animated-rotateInDownLeft > * {
+    -webkit-animation-name: rotateInDownLeft;
+    animation-name: rotateInDownLeft; }
+  .ahvr-animated:hover .animated-rotateInDownRight,
+  .ahvr-animated:hover.animated-rotateInDownRight > * {
+    -webkit-animation-name: rotateInDownRight;
+    animation-name: rotateInDownRight; }
+  .ahvr-animated:hover .animated-rotateInUpLeft,
+  .ahvr-animated:hover.animated-rotateInUpLeft > * {
+    -webkit-animation-name: rotateInUpLeft;
+    animation-name: rotateInUpLeft; }
+  .ahvr-animated:hover .animated-rotateInUpRight,
+  .ahvr-animated:hover.animated-rotateInUpRight > * {
+    -webkit-animation-name: rotateInUpRight;
+    animation-name: rotateInUpRight; }
+  .ahvr-animated:hover .animated-bounceIn,
+  .ahvr-animated:hover.animated-bounceIn > * {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn; }
+  .ahvr-animated:hover .animated-bounceInDown,
+  .ahvr-animated:hover.animated-bounceInDown > * {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown; }
+  .ahvr-animated:hover .animated-bounceInLeft,
+  .ahvr-animated:hover.animated-bounceInLeft > * {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft; }
+  .ahvr-animated:hover .animated-bounceInRight,
+  .ahvr-animated:hover.animated-bounceInRight > * {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight; }
+  .ahvr-animated:hover .animated-bounceInUp,
+  .ahvr-animated:hover.animated-bounceInUp > * {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp; }
+  .ahvr-animated:hover .animated-bounceOut,
+  .ahvr-animated:hover.animated-bounceOut > * {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceOut;
+    animation-name: bounceOut; }
+  .ahvr-animated:hover .animated-bounceOutDown,
+  .ahvr-animated:hover.animated-bounceOutDown > * {
+    -webkit-animation-name: bounceOutDown;
+    animation-name: bounceOutDown; }
+  .ahvr-animated:hover .animated-bounceOutLeft,
+  .ahvr-animated:hover.animated-bounceOutLeft > * {
+    -webkit-animation-name: bounceOutLeft;
+    animation-name: bounceOutLeft; }
+  .ahvr-animated:hover .animated-bounceOutRight,
+  .ahvr-animated:hover.animated-bounceOutRight > * {
+    -webkit-animation-name: bounceOutRight;
+    animation-name: bounceOutRight; }
+  .ahvr-animated:hover .animated-bounceOutUp,
+  .ahvr-animated:hover.animated-bounceOutUp > * {
+    -webkit-animation-name: bounceOutUp;
+    animation-name: bounceOutUp; }
+  .ahvr-animated:hover .animated-rotateOut,
+  .ahvr-animated:hover.rotateOu.animated- > * {
+    -webkit-animation-name: rotateOut;
+    animation-name: rotateOut; }
+  .ahvr-animated:hover .animated-rotateOutDownLeft,
+  .ahvr-animated:hover.animated-rotateOutDownLeft > * {
+    -webkit-animation-name: rotateOutDownLeft;
+    animation-name: rotateOutDownLeft; }
+  .ahvr-animated:hover .animated-rotateOutDownRight,
+  .ahvr-animated:hover.animated-rotateOutDownRight > * {
+    -webkit-animation-name: rotateOutDownRight;
+    animation-name: rotateOutDownRight; }
+  .ahvr-animated:hover .animated-rotateOutUpLeft,
+  .ahvr-animated:hover.animated-rotateOutUpLeft > * {
+    -webkit-animation-name: rotateOutUpLeft;
+    animation-name: rotateOutUpLeft; }
+  .ahvr-animated:hover .animated-rotateOutUpRight,
+  .ahvr-animated:hover.animated-rotateOutUpRight > * {
+    -webkit-animation-name: rotateOutUpRight;
+    animation-name: rotateOutUpRight; }
+  .ahvr-animated:hover .animated-slideInDown,
+  .ahvr-animated:hover.animated-slideInDown > * {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown; }
+  .ahvr-animated:hover .animated-slideInLeft,
+  .ahvr-animated:hover.animated-slideInLeft > * {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft; }
+  .ahvr-animated:hover .animated-slideInRight,
+  .ahvr-animated:hover.animated-slideInRight > * {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight; }
+  .ahvr-animated:hover .animated-slideInUp,
+  .ahvr-animated:hover.animated-slideInUp > * {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp; }
+  .ahvr-animated:hover .animated-slideOutDown,
+  .ahvr-animated:hover.animated-slideOutDown > * {
+    -webkit-animation-name: slideOutDown;
+    animation-name: slideOutDown; }
+  .ahvr-animated:hover .animated-slideOutLeft,
+  .ahvr-animated:hover.animated-slideOutLeft > * {
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft; }
+  .ahvr-animated:hover .animated-slideOutRight,
+  .ahvr-animated:hover.animated-slideOutRight > * {
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight; }
+  .ahvr-animated:hover .animated-slideOutUp,
+  .ahvr-animated:hover.animated-slideOutUp > * {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp; }
+  .ahvr-animated:hover .animated-zoomIn,
+  .ahvr-animated:hover.animated-zoomIn > * {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn; }
+
 .ahvr-square {
   position: relative; }
   .ahvr-square .image {
@@ -557,174 +728,3 @@ zoom image
 
 .circle.effect-4:hover.black-colored .info-content {
   background: rgba(33, 33, 33, 0.6) !important; }
-
-.ahvr-animated.animated-box:hover > * {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.ahvr-animated {
-  /* Attention Seekers */
-  /* Rotating Entrances */
-  /* bounces */
-  /* Rotating Exits */
-  /* Sliding Entrances */
-  /* Sliding Exits */
-  /*Zoom Entrances  */ }
-  .ahvr-animated:hover .animated-bounce,
-  .ahvr-animated:hover.animated-bounce > * {
-    -webkit-animation-name: bounce;
-    animation-name: bounce; }
-  .ahvr-animated:hover .animated-flash,
-  .ahvr-animated:hover.animated-flash > * {
-    -webkit-animation-name: flash;
-    animation-name: flash; }
-  .ahvr-animated:hover .animated-pulse,
-  .ahvr-animated:hover.animated-pulse > * {
-    -webkit-animation-name: pulse;
-    animation-name: pulse; }
-  .ahvr-animated:hover .animated-rubberBand,
-  .ahvr-animated:hover.animated-rubberBand > * {
-    -webkit-animation-name: rubberBand;
-    animation-name: rubberBand; }
-  .ahvr-animated:hover .animated-shake,
-  .ahvr-animated:hover.animated-shake > * {
-    -webkit-animation-name: shake;
-    animation-name: shake; }
-  .ahvr-animated:hover .animated-swing,
-  .ahvr-animated:hover.animated-swing > * {
-    -webkit-animation-name: swing;
-    animation-name: swing; }
-  .ahvr-animated:hover .animated-tada,
-  .ahvr-animated:hover.animated-tada > * {
-    -webkit-animation-name: tada;
-    animation-name: tada; }
-  .ahvr-animated:hover .animated-wobble,
-  .ahvr-animated:hover.animated-wobble > * {
-    -webkit-animation-name: wobble;
-    animation-name: wobble; }
-  .ahvr-animated:hover .animated-jello,
-  .ahvr-animated:hover.animated-jello > * {
-    -webkit-animation-name: jello;
-    animation-name: jello; }
-  .ahvr-animated:hover .animated-rotateIn,
-  .ahvr-animated:hover.animated-rotateIn > * {
-    -webkit-animation-name: rotateIn;
-    animation-name: rotateIn; }
-  .ahvr-animated:hover .animated-rotateInDownLeft,
-  .ahvr-animated:hover.animated-rotateInDownLeft > * {
-    -webkit-animation-name: rotateInDownLeft;
-    animation-name: rotateInDownLeft; }
-  .ahvr-animated:hover .animated-rotateInDownRight,
-  .ahvr-animated:hover.animated-rotateInDownRight > * {
-    -webkit-animation-name: rotateInDownRight;
-    animation-name: rotateInDownRight; }
-  .ahvr-animated:hover .animated-rotateInUpLeft,
-  .ahvr-animated:hover.animated-rotateInUpLeft > * {
-    -webkit-animation-name: rotateInUpLeft;
-    animation-name: rotateInUpLeft; }
-  .ahvr-animated:hover .animated-rotateInUpRight,
-  .ahvr-animated:hover.animated-rotateInUpRight > * {
-    -webkit-animation-name: rotateInUpRight;
-    animation-name: rotateInUpRight; }
-  .ahvr-animated:hover .animated-bounceIn,
-  .ahvr-animated:hover.animated-bounceIn > * {
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-name: bounceIn;
-    animation-name: bounceIn; }
-  .ahvr-animated:hover .animated-bounceInDown,
-  .ahvr-animated:hover.animated-bounceInDown > * {
-    -webkit-animation-name: bounceInDown;
-    animation-name: bounceInDown; }
-  .ahvr-animated:hover .animated-bounceInLeft,
-  .ahvr-animated:hover.animated-bounceInLeft > * {
-    -webkit-animation-name: bounceInLeft;
-    animation-name: bounceInLeft; }
-  .ahvr-animated:hover .animated-bounceInRight,
-  .ahvr-animated:hover.animated-bounceInRight > * {
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight; }
-  .ahvr-animated:hover .animated-bounceInUp,
-  .ahvr-animated:hover.animated-bounceInUp > * {
-    -webkit-animation-name: bounceInUp;
-    animation-name: bounceInUp; }
-  .ahvr-animated:hover .animated-bounceOut,
-  .ahvr-animated:hover.animated-bounceOut > * {
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-name: bounceOut;
-    animation-name: bounceOut; }
-  .ahvr-animated:hover .animated-bounceOutDown,
-  .ahvr-animated:hover.animated-bounceOutDown > * {
-    -webkit-animation-name: bounceOutDown;
-    animation-name: bounceOutDown; }
-  .ahvr-animated:hover .animated-bounceOutLeft,
-  .ahvr-animated:hover.animated-bounceOutLeft > * {
-    -webkit-animation-name: bounceOutLeft;
-    animation-name: bounceOutLeft; }
-  .ahvr-animated:hover .animated-bounceOutRight,
-  .ahvr-animated:hover.animated-bounceOutRight > * {
-    -webkit-animation-name: bounceOutRight;
-    animation-name: bounceOutRight; }
-  .ahvr-animated:hover .animated-bounceOutUp,
-  .ahvr-animated:hover.animated-bounceOutUp > * {
-    -webkit-animation-name: bounceOutUp;
-    animation-name: bounceOutUp; }
-  .ahvr-animated:hover .animated-rotateOut,
-  .ahvr-animated:hover.rotateOu.animated- > * {
-    -webkit-animation-name: rotateOut;
-    animation-name: rotateOut; }
-  .ahvr-animated:hover .animated-rotateOutDownLeft,
-  .ahvr-animated:hover.animated-rotateOutDownLeft > * {
-    -webkit-animation-name: rotateOutDownLeft;
-    animation-name: rotateOutDownLeft; }
-  .ahvr-animated:hover .animated-rotateOutDownRight,
-  .ahvr-animated:hover.animated-rotateOutDownRight > * {
-    -webkit-animation-name: rotateOutDownRight;
-    animation-name: rotateOutDownRight; }
-  .ahvr-animated:hover .animated-rotateOutUpLeft,
-  .ahvr-animated:hover.animated-rotateOutUpLeft > * {
-    -webkit-animation-name: rotateOutUpLeft;
-    animation-name: rotateOutUpLeft; }
-  .ahvr-animated:hover .animated-rotateOutUpRight,
-  .ahvr-animated:hover.animated-rotateOutUpRight > * {
-    -webkit-animation-name: rotateOutUpRight;
-    animation-name: rotateOutUpRight; }
-  .ahvr-animated:hover .animated-slideInDown,
-  .ahvr-animated:hover.animated-slideInDown > * {
-    -webkit-animation-name: slideInDown;
-    animation-name: slideInDown; }
-  .ahvr-animated:hover .animated-slideInLeft,
-  .ahvr-animated:hover.animated-slideInLeft > * {
-    -webkit-animation-name: slideInLeft;
-    animation-name: slideInLeft; }
-  .ahvr-animated:hover .animated-slideInRight,
-  .ahvr-animated:hover.animated-slideInRight > * {
-    -webkit-animation-name: slideInRight;
-    animation-name: slideInRight; }
-  .ahvr-animated:hover .animated-slideInUp,
-  .ahvr-animated:hover.animated-slideInUp > * {
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp; }
-  .ahvr-animated:hover .animated-slideOutDown,
-  .ahvr-animated:hover.animated-slideOutDown > * {
-    -webkit-animation-name: slideOutDown;
-    animation-name: slideOutDown; }
-  .ahvr-animated:hover .animated-slideOutLeft,
-  .ahvr-animated:hover.animated-slideOutLeft > * {
-    -webkit-animation-name: slideOutLeft;
-    animation-name: slideOutLeft; }
-  .ahvr-animated:hover .animated-slideOutRight,
-  .ahvr-animated:hover.animated-slideOutRight > * {
-    -webkit-animation-name: slideOutRight;
-    animation-name: slideOutRight; }
-  .ahvr-animated:hover .animated-slideOutUp,
-  .ahvr-animated:hover.animated-slideOutUp > * {
-    -webkit-animation-name: slideOutUp;
-    animation-name: slideOutUp; }
-  .ahvr-animated:hover .animated-zoomIn,
-  .ahvr-animated:hover.animated-zoomIn > * {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn; }
