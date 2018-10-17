@@ -1,21 +1,19 @@
 {
   "name": "animate-hover",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "animate css classes hover of help for fronend",
   "main": "gulpfile.js",
   "scripts": {
     "clean": "rimraf vendor",
     "vendor": "vendor-copy",
-    "animate-full": "node-sass src/scss/animate-full.scss css/animate-full.css",
     "animate": "node-sass src/scss/animate-hover.scss css/animate-hover.css",
     "circle": "node-sass src/scss/animate-circle.scss css/animate-circle.css",
     "square": "node-sass src/scss/animate-square.scss css/animate-square.css",
-    "dev": "npm run vendor & npm run animate & npm run circle & npm run square & npm run animate-full",
+    "dev": "npm run vendor & npm run animate & npm run circle & npm run square",
     "animate-min": "node-sass src/scss/animate-hover.scss css/animate-hover.min.css --output-style compressed",
     "circle-min": "node-sass src/scss/animate-circle.scss css/animate-circle.min.css --output-style compressed",
     "square-min": "node-sass src/scss/animate-square.scss css/animate-square.min.css --output-style compressed",
-    "animate-full-min": "node-sass src/scss/animate-full.scss css/animate-full.min.css --output-style compressed",
-    "prod": "npm run vendor & npm run animate-min & npm run circle-min & npm run square-min & npm run animate-full-min "
+    "prod": "npm run vendor & npm run animate-min & npm run circle-min & npm run square-min"
   },
   "repository": {
     "type": "git",
@@ -36,8 +34,12 @@
   },
   "vendorCopy": [
     {
+      "from": "node_modules/animate.css/animate.min.css",
+      "to": "css/animate.css/animate.min.css"
+    },
+    {
       "from": "node_modules/animate.css/animate.css",
-      "to": "vendor/animate.css/animate.scss"
+      "to": "css/animate.css/animate.css"
     }
   ]
 }
