@@ -33,7 +33,7 @@ $ npm install animate-hover --save
 
 ```html
 <head>
-  <link rel="stylesheet" href="css/animate/animate.min.css">
+  <link rel="stylesheet" href="css/animate.css/animate.min.css">
   <link rel="stylesheet" href="css/animate-hover.min.css">
 </head>
 ```

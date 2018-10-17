@@ -1,6 +1,6 @@
 {
   "name": "animate-hover",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "animate css classes hover of help for fronend",
   "main": "gulpfile.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/armandoaepp/animate-hover.git"
   },
   "keywords": [
-    "helper-hover"
+    "animate-hover, animate-css-hover"
   ],
   "author": "@armandoaepp",
   "license": "ISC",
