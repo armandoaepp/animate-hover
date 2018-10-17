@@ -4,13 +4,12 @@ Common CSS helper classes.
 
 ## Install
 
-Install with Npm 
+Install with Npm
 
 ### npm
 
 To install with npm run
 
 ```
-$ npm install helper-hover --save
+$ npm install animate-hover --save
 ```
- 

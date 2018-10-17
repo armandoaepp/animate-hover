@@ -1,7 +1,7 @@
 {
-  "name": "helper-hover",
-  "version": "1.0.1",
-  "description": "css classes of help for fronend",
+  "name": "animate-hover",
+  "version": "1.0.0",
+  "description": "animate css classes of help for fronend",
   "main": "gulpfile.js",
   "scripts": {
     "clean": "rimraf vendor",
