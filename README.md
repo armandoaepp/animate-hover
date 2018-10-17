@@ -1,4 +1,4 @@
-# animate-hover.css
+# animate-hover.css [![npm version](https://badge.fury.io/js/animate.css.svg)](https://www.npmjs.com/package/animate-hover)
 
 Common CSS helper classes.
 
@@ -59,8 +59,7 @@ $ npm install animate-hover --save
 
 Full example:
 
-All Box
-
+Animate: All Box
 ```html
 <h1 class="ahvr-animated animated-box animated-bounce">Example</h1>
 
@@ -78,7 +77,7 @@ All Box
 </a>
 ```
 
-Box Content
+Animate: Box Content
 ```html
 <h1 class="ahvr-animated animated-box ">Example
   <span class="animated-bounce"> animated-bounce </span>
