@@ -4,14 +4,18 @@
   "description": "css classes of help for fronend",
   "main": "gulpfile.js",
   "scripts": {
+    "clean": "rimraf vendor",
+    "vendor": "vendor-copy",
+    "app-full": "node-sass src/scss/app-full.scss css/app-full.css",
     "app": "node-sass src/scss/app.scss css/app.css",
     "circle": "node-sass src/scss/circle.scss css/circle.css",
     "square": "node-sass src/scss/square.scss css/square.css",
-    "dev": "npm run app & npm run circle & npm run square ",
+    "dev": "npm run vendor & npm run app & npm run circle & npm run square & npm run app-full",
     "app-min": "node-sass src/scss/app.scss css/app-min.css --output-style compressed",
     "circle-min": "node-sass src/scss/circle.scss css/circle-min.css --output-style compressed",
     "square-min": "node-sass src/scss/square.scss css/square-min.css --output-style compressed",
-    "prod": "npm run app-min & npm run circle-min & npm run square-min "
+    "app-full-min": "node-sass src/scss/app-full.scss css/app-full-min.css --output-style compressed",
+    "prod": "npm run vendor & npm run app-min & npm run circle-min & npm run square-min & npm run app-full-min "
   },
   "repository": {
     "type": "git",
@@ -26,6 +30,14 @@
     "animate.css": "^3.7.0"
   },
   "devDependencies": {
-    "node-sass": "^4.9.2"
-  }
+    "node-sass": "^4.9.4",
+    "rimraf": "^2.6.2",
+    "vendor-copy": "^2.0.0"
+  },
+  "vendorCopy": [
+    {
+      "from": "node_modules/animate.css/animate.css",
+      "to": "vendor/animate.css/animate.scss"
+    }
+  ]
 }
