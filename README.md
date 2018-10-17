@@ -25,10 +25,18 @@ $ npm install animate-hover --save
 
 ```html
 <head>
-  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="css/animate-hover.min.css">
 </head>
 ```
 
+#### for animations based on animate.css
+
+```html
+<head>
+  <link rel="stylesheet" href="css/animate/animate.min.css">
+  <link rel="stylesheet" href="css/animate-hover.min.css">
+</head>
+```
 
 2.  Add the class `ahvr-animated animated-box` to the element you want to animate.
 
