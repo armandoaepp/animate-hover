@@ -20,7 +20,8 @@
     "url": "git+https://github.com/armandoaepp/animate-hover.git"
   },
   "keywords": [
-    "animate-hover, animate-css-hover"
+    "animate-hover",
+    "animate-css-hover"
   ],
   "author": "@armandoaepp",
   "license": "ISC",

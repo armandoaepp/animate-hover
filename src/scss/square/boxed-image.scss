@@ -30,7 +30,8 @@
 
 }
 
-.ahvr-boxed-image.boxed-image-in {
+.ahvr-boxed-image.overlay-opacity {
+  overflow: hidden;
   .overlay {
     opacity: 0;
   }
@@ -38,33 +39,4 @@
     opacity: 1;
   }
 }
-/* bg-opacities ======================================== */
-.ahvr-bg-primary-box {
-  .overlay {
-    background-color: rgba($primary-color, .75);
-  }
-  &:hover .overlay {
-    background-color: rgba($primary-color, .45);
-  }
-}
 
-.ahvr-bg-secondary-box {
-  .overlay {
-    background-color: rgba($secondary-color, .75);
-  }
-  &:hover .overlay {
-    background-color: rgba($secondary-color, .45);
-  }
-}
-
-.ahvr-bg-white-box {
-  .overlay {
-    background-color: rgba($white, .75);
-  }
-  &:hover .overlay {
-    background-color: rgba($white, .45);
-  }
-  .middle{
-    color: $black ;
-  }
-}

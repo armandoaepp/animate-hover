@@ -1,0 +1,50 @@
+
+/* Aninated Middle
+=========================== */
+
+.ahvr-middle-from-top{
+  .middle {
+    top: 0;
+    -webkit-transition: top .3s;
+    transition: top .3s;
+  }
+  &:hover .overlay  .middle {
+    top: 50% ;
+  }
+}
+
+.ahvr-middle-from-bottom {
+  .middle {
+    top: 100%!important;
+    -webkit-transition: top .3s;
+    transition: top .3s;
+  }
+  &:hover .overlay  .middle {
+
+    top: 50%!important ;
+  }
+}
+
+.ahvr-middle-from-left{
+  .middle {
+    left: 0;
+     -webkit-transition: left .3s!important;
+    transition: left .3!important;
+  }
+  &:hover .overlay  .middle {
+    left: 50%;
+  }
+}
+
+
+
+.ahvr-middle-from-right{
+   .middle {
+     left: 100%;
+      -webkit-transition: left .3s!important;
+     transition: left .3!important;
+   }
+   &:hover .overlay  .middle {
+     left: 50%;
+   }
+ }

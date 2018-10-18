@@ -1,0 +1,78 @@
+/* Background  */
+
+.ahvr-bg-primary,
+.ahvr-bg-primary .overlay {
+  background: $primary-color!important;
+}
+
+.ahvr-bg-secondary,
+.ahvr-bg-secondary .overlay {
+  background: $secondary-color!important;
+}
+
+.ahvr-bg-primary-light,
+.ahvr-bg-primary-light .overlay {
+  background: $primary-light-color!important;
+}
+
+.ahvr-bg-primary-dark,
+.ahvr-bg-primary-dark .overlay {
+  background: $primary-dark-color!important;
+}
+
+/* Background Transparent  */
+
+.ahvr-bg-primary-50,
+.ahvr-bg-primary-50 .overlay {
+  background: rgba($primary-color, .5)!important;
+}
+
+.ahvr-bg-secondary-50,
+.ahvr-bg-secondary-50 .overlay {
+  background: rgba($secondary-color, .5)!important;
+}
+
+.ahvr-bg-black-50,
+.ahvr-bg-black-50 .overlay {
+  background: rgba($black, .5)!important;
+  color: $white;
+}
+
+.ahvr-bg-white-50,
+.ahvr-bg-white-50 .overlay {
+  background: rgba($white, .5)!important;
+  color: $black!important ;
+  .middle {
+    color: $black;
+  }
+}
+/* bg-opacities box ======================================== */
+.ahvr-bg-primary-box {
+  .overlay {
+    background-color: rgba($primary-color, .75);
+  }
+  &:hover .overlay {
+    background-color: rgba($primary-color, .45);
+  }
+}
+
+.ahvr-bg-secondary-box {
+  .overlay {
+    background-color: rgba($secondary-color, .75);
+  }
+  &:hover .overlay {
+    background-color: rgba($secondary-color, .45);
+  }
+}
+
+.ahvr-bg-white-box {
+  .overlay {
+    background-color: rgba($white, .75);
+  }
+  &:hover .overlay {
+    background-color: rgba($white, .45);
+  }
+  .middle{
+    color: $black ;
+  }
+}
