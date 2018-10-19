@@ -1,7 +1,7 @@
 {
   "name": "animate-hover",
   "version": "1.0.6",
-  "description": "animate css classes hover of help for fronend",
+  "description": "animate hover: animations based only on css, help classs for frondend ",
   "main": "gulpfile.js",
   "scripts": {
     "clean": "rimraf vendor",
@@ -24,10 +24,12 @@
     "animate hover"
   ],
   "author": "@armandoaepp",
+  "email" : "armandoaepp@gmail.com",
   "license": "ISC",
   "dependencies": {
     "animate.css": "^3.7.0"
   },
+  "homepage": "https://armandoaepp.github.io/animate-hover/index.html",
   "devDependencies": {
     "node-sass": "^4.9.4",
     "rimraf": "^2.6.2",
