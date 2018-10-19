@@ -1,6 +1,6 @@
 {
   "name": "animate-hover",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "animate css classes hover of help for fronend",
   "main": "gulpfile.js",
   "scripts": {
