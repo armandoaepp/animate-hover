@@ -1,0 +1,64 @@
+.ahvr-circle {
+  position: relative;
+  padding: $border_width;
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  .spinner {
+    border: $border_width solid $primary-color;
+    border-right-color: $secondary-color;
+    border-bottom-color: $secondary-color;
+    transition: all 0.8s ease-in-out;
+    z-index: 11;
+  }
+  .spinner {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  &:hover .spinner {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .spinner,
+  .overly {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .overly {
+    z-index: 12;
+  }
+  .middle {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.ahvr-circle.effect-rotate {
+
+  &:hover .spinner {
+    background-clip: content-box;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+

@@ -2,51 +2,53 @@
 
 .ahvr-bg-primary,
 .ahvr-bg-primary .overlay {
-  background: $primary-color!important;
+  background: $primary-color !important;
 }
 
 .ahvr-bg-secondary,
 .ahvr-bg-secondary .overlay {
-  background: $secondary-color!important;
+  background: $secondary-color !important;
 }
 
 .ahvr-bg-primary-light,
 .ahvr-bg-primary-light .overlay {
-  background: $primary-light-color!important;
+  background: $primary-light-color !important;
 }
 
 .ahvr-bg-primary-dark,
 .ahvr-bg-primary-dark .overlay {
-  background: $primary-dark-color!important;
+  background: $primary-dark-color !important;
 }
 
 /* Background Transparent  */
 
 .ahvr-bg-primary-50,
 .ahvr-bg-primary-50 .overlay {
-  background: rgba($primary-color, .5)!important;
+  background: rgba($primary-color, .5) !important;
 }
 
 .ahvr-bg-secondary-50,
 .ahvr-bg-secondary-50 .overlay {
-  background: rgba($secondary-color, .5)!important;
+  background: rgba($secondary-color, .5) !important;
 }
 
 .ahvr-bg-black-50,
 .ahvr-bg-black-50 .overlay {
-  background: rgba($black, .5)!important;
+  background: rgba($black, .5) !important;
   color: $white;
 }
 
 .ahvr-bg-white-50,
 .ahvr-bg-white-50 .overlay {
-  background: rgba($white, .5)!important;
-  color: $black!important ;
+  background: rgba($white, .5) !important;
+  color: $black !important;
   .middle {
     color: $black;
   }
 }
+
 /* bg-opacities box ======================================== */
+
 .ahvr-bg-primary-box {
   .overlay {
     background-color: rgba($primary-color, .75);
@@ -72,7 +74,39 @@
   &:hover .overlay {
     background-color: rgba($white, .45);
   }
-  .middle{
-    color: $black ;
+  .middle {
+    color: $black;
+  }
+}
+
+/* bg-opacities circle ======================================== */
+
+.ahvr-bg-primary-circle {
+  .spinner {
+    background-color: rgba($primary-color, 0.25)!important;
+  }
+  &:hover .spinner {
+    background-color: rgba($primary-color, 0.6)!important;
+  }
+}
+
+.ahvr-bg-secondary-circle {
+  .spinner {
+    background-color: rgba($secondary-color, 0.25)!important;
+  }
+  &:hover .spinner {
+    background-color: rgba($secondary-color, 0.6)!important;
+  }
+}
+
+.ahvr-bg-white-circle {
+  .spinner {
+    background-color: rgba($white, 0.25)!important;
+  }
+  &:hover .spinner {
+    background-color: rgba($white, 0.6)!important;
+  }
+  .middle {
+    color: $black!important;
   }
 }
