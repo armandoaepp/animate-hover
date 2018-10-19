@@ -51,28 +51,28 @@
 
 .ahvr-bg-primary-box {
   .overlay {
-    background-color: rgba($primary-color, .75);
+    background-color: rgba($primary-color, .75)!important;
   }
   &:hover .overlay {
-    background-color: rgba($primary-color, .45);
+    background-color: rgba($primary-color, .45)!important;
   }
 }
 
 .ahvr-bg-secondary-box {
   .overlay {
-    background-color: rgba($secondary-color, .75);
+    background-color: rgba($secondary-color, .75)!important;
   }
   &:hover .overlay {
-    background-color: rgba($secondary-color, .45);
+    background-color: rgba($secondary-color, .45)!important;
   }
 }
 
 .ahvr-bg-white-box {
   .overlay {
-    background-color: rgba($white, .75);
+    background-color: rgba($white, .75)!important;
   }
   &:hover .overlay {
-    background-color: rgba($white, .45);
+    background-color: rgba($white, .45)!important;
   }
   .middle {
     color: $black;

@@ -10,19 +10,75 @@
     @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
   </style>
 
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../../css/animate.css/animate.min.css">
-  <link rel="stylesheet" href="../../css/animate-hover.css">
+  <!-- Base url -->
+  <base href="http://localhost/animate-hover/">
+
+
+  <link rel="stylesheet" href="examples/css/style.css">
+
+  <link rel="stylesheet" href="css/animate.css/animate.min.css">
+  <link rel="stylesheet" href="css/animate-hover.css">
 
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Animate Hover</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <h2>Animate Circle Hover Images </h2>
-  <p>Hover over the image to see the effect.</p>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Circles
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="examples/circles/animate-circle-box.html">Circle Box</a>
+            <a class="dropdown-item" href="examples/circles/animate-circle-in-box.html">Circle in Box</a>
+            <a class="dropdown-item" href="examples/circles/animate-circle-box-rotates.html"> Circle Box Rotates</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="examples/circles/circle-effect-1.html">Circle Effect 1</a>
+            <a class="dropdown-item" href="examples/circles/circle-effect-2.html">Circle Effect 2</a>
+            <a class="dropdown-item" href="examples/circles/circle-effect-3.html">Circle Effect 3</a>
+            <a class="dropdown-item" href="examples/circles/circle-effect-4.html">Circle Effect 4</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Squares
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="examples/square/boxed-images/box-image-index.html">Square Box </a>
+            <a class="dropdown-item" href="examples/square/boxed-images-inside/box-image-inside-index.html">Square Box
+              Inside</a>
+
+
+          </div>
+        </li>
+
+
+
+      </ul>
+
+    </div>
+  </nav>
+
 
   <div class="container">
-
+    <h2>Animate Circle Hover Images </h2>
+    <p>Hover over the image to see the effect.</p>
     <div id="Bounce" class="row">
       <div class="col-12 mt-3">
         <h4> Circle Bounce </h4>
@@ -33,7 +89,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounce">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -50,7 +106,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounce">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -67,7 +123,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounce">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -84,7 +140,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounce">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -108,7 +164,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-flash">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -125,7 +181,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-flash">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -142,7 +198,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-flash">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -159,7 +215,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-flash">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -183,7 +239,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-pulse">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -200,7 +256,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-pulse">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -217,7 +273,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-pulse">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -234,7 +290,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-pulse">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -258,7 +314,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rubberBand">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -275,7 +331,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rubberBand">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -292,7 +348,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rubberBand">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -309,7 +365,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rubberBand">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -333,7 +389,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-shake">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -350,7 +406,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-shake">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -367,7 +423,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-shake">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -384,7 +440,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-shake">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -408,7 +464,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-swing">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -425,7 +481,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-swing">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -442,7 +498,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-swing">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -459,7 +515,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-swing">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -483,7 +539,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-tada">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -500,7 +556,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-tada">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -517,7 +573,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-tada">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -534,7 +590,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-tada">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -558,7 +614,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-wobble">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -575,7 +631,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-wobble">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -592,7 +648,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-wobble">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -609,7 +665,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-wobble">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -633,7 +689,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-jello">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -650,7 +706,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-jello">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -667,7 +723,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-jello">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -684,7 +740,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-jello">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -708,7 +764,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -725,7 +781,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -742,7 +798,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -759,7 +815,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -783,7 +839,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInDownLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -800,7 +856,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInDownLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -817,7 +873,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInDownLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -834,7 +890,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInDownLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -858,7 +914,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInDownRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -875,7 +931,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInDownRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -892,7 +948,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInDownRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -909,7 +965,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInDownRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -933,7 +989,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInUpRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -950,7 +1006,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInUpRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -967,7 +1023,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInUpRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -984,7 +1040,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-rotateInUpRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1008,7 +1064,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1025,7 +1081,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1042,7 +1098,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1059,7 +1115,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1083,7 +1139,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1100,7 +1156,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1117,7 +1173,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1134,7 +1190,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1158,7 +1214,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1175,7 +1231,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1192,7 +1248,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1209,7 +1265,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1233,7 +1289,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1250,7 +1306,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1267,7 +1323,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1284,7 +1340,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1308,7 +1364,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1325,7 +1381,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1342,7 +1398,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1359,7 +1415,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceInUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1383,7 +1439,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOut">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1400,7 +1456,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOut">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1417,7 +1473,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOut">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1434,7 +1490,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOut">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1458,7 +1514,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1475,7 +1531,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1492,7 +1548,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1509,7 +1565,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1533,7 +1589,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1550,7 +1606,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1567,7 +1623,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1584,7 +1640,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1608,7 +1664,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1625,7 +1681,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1642,7 +1698,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1659,7 +1715,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1683,7 +1739,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1700,7 +1756,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1717,7 +1773,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1734,7 +1790,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-bounceOutUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1758,7 +1814,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1775,7 +1831,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1792,7 +1848,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1809,7 +1865,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInDown">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1833,7 +1889,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1850,7 +1906,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1867,7 +1923,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1884,7 +1940,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInLeft">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1908,7 +1964,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1925,7 +1981,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1942,7 +1998,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1959,7 +2015,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInRight">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -1983,7 +2039,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2000,7 +2056,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2017,7 +2073,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2034,7 +2090,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-slideInUp">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2058,7 +2114,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-zoomIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2075,7 +2131,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-zoomIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2092,7 +2148,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-zoomIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2109,7 +2165,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-zoomIn">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2133,7 +2189,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-zoomOut">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2150,7 +2206,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-primary-circle ">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-zoomOut">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2167,7 +2223,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-secondary-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-zoomOut">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2184,7 +2240,7 @@
         <a href="#">
           <div class="ahvr-circle ahvr-animated animated-box ahvr-bg-white-circle">
             <div class="spinner"></div>
-            <img class="img-fluid image" src="../../images/img_avatar.png" alt="Avatar">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
             <div class="overly animated-zoomOut">
               <div class="middle">
                 <i class="boxed-icon fa fa-soccer-ball-o"></i>
@@ -2201,6 +2257,10 @@
 
 
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 </body>
 

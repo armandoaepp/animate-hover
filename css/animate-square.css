@@ -337,22 +337,22 @@ zoom image
 
 /* bg-opacities box ======================================== */
 .ahvr-bg-primary-box .overlay {
-  background-color: rgba(48, 169, 222, 0.75); }
+  background-color: rgba(48, 169, 222, 0.75) !important; }
 
 .ahvr-bg-primary-box:hover .overlay {
-  background-color: rgba(48, 169, 222, 0.45); }
+  background-color: rgba(48, 169, 222, 0.45) !important; }
 
 .ahvr-bg-secondary-box .overlay {
-  background-color: rgba(239, 220, 5, 0.75); }
+  background-color: rgba(239, 220, 5, 0.75) !important; }
 
 .ahvr-bg-secondary-box:hover .overlay {
-  background-color: rgba(239, 220, 5, 0.45); }
+  background-color: rgba(239, 220, 5, 0.45) !important; }
 
 .ahvr-bg-white-box .overlay {
-  background-color: rgba(243, 243, 243, 0.75); }
+  background-color: rgba(243, 243, 243, 0.75) !important; }
 
 .ahvr-bg-white-box:hover .overlay {
-  background-color: rgba(243, 243, 243, 0.45); }
+  background-color: rgba(243, 243, 243, 0.45) !important; }
 
 .ahvr-bg-white-box .middle {
   color: #212121; }
