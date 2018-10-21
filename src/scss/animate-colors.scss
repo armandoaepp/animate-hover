@@ -20,6 +20,19 @@
   background: $primary-dark-color !important;
 }
 
+.ahvr-bg-black,
+.ahvr-bg-black .overlay {
+  background: $black !important;
+}
+
+.ahvr-bg-white,
+.ahvr-bg-white .overlay {
+  background: $white !important;
+  > * {
+    color: $black !important;
+  }
+}
+
 /* Background Transparent  */
 
 .ahvr-bg-primary-50,
@@ -51,28 +64,28 @@
 
 .ahvr-bg-primary-box {
   .overlay {
-    background-color: rgba($primary-color, .75)!important;
+    background-color: rgba($primary-color, .75) !important;
   }
   &:hover .overlay {
-    background-color: rgba($primary-color, .45)!important;
+    background-color: rgba($primary-color, .45) !important;
   }
 }
 
 .ahvr-bg-secondary-box {
   .overlay {
-    background-color: rgba($secondary-color, .75)!important;
+    background-color: rgba($secondary-color, .75) !important;
   }
   &:hover .overlay {
-    background-color: rgba($secondary-color, .45)!important;
+    background-color: rgba($secondary-color, .45) !important;
   }
 }
 
 .ahvr-bg-white-box {
   .overlay {
-    background-color: rgba($white, .75)!important;
+    background-color: rgba($white, .75) !important;
   }
   &:hover .overlay {
-    background-color: rgba($white, .45)!important;
+    background-color: rgba($white, .45) !important;
   }
   .middle {
     color: $black;
@@ -83,30 +96,30 @@
 
 .ahvr-bg-primary-circle {
   .spinner {
-    background-color: rgba($primary-color, 0.25)!important;
+    background-color: rgba($primary-color, 0.25) !important;
   }
   &:hover .spinner {
-    background-color: rgba($primary-color, 0.6)!important;
+    background-color: rgba($primary-color, 0.6) !important;
   }
 }
 
 .ahvr-bg-secondary-circle {
   .spinner {
-    background-color: rgba($secondary-color, 0.25)!important;
+    background-color: rgba($secondary-color, 0.25) !important;
   }
   &:hover .spinner {
-    background-color: rgba($secondary-color, 0.6)!important;
+    background-color: rgba($secondary-color, 0.6) !important;
   }
 }
 
 .ahvr-bg-white-circle {
   .spinner {
-    background-color: rgba($white, 0.25)!important;
+    background-color: rgba($white, 0.25) !important;
   }
   &:hover .spinner {
-    background-color: rgba($white, 0.6)!important;
+    background-color: rgba($white, 0.6) !important;
   }
   .middle {
-    color: $black!important;
+    color: $black !important;
   }
 }

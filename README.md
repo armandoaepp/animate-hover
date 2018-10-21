@@ -76,9 +76,9 @@ Animate: All Box
     <img class="img-fluid image" src="./images/img_avatar.png" alt="Avatar">
     <div class="overlay">
       <div class="middle">
-        <i class="boxed-icon fa fa-soccer-ball-o"></i>
-        <h4 class="boxed-title"> Soccer Team </h4>
-        <p class="boxed-text"> Best Sports Features</p>
+        <i class="box-icon fa fa-soccer-ball-o"></i>
+        <h4 class="box-title"> Soccer Team </h4>
+        <p class="box-text"> Best Sports Features</p>
       </div>
     </div>
   </div>
@@ -96,9 +96,9 @@ Animate: Box Content
     <img class="img-fluid image" src="../../../images/img_avatar.png" alt="Avatar">
     <div class="overlay animated-bounce">
       <div class="middle">
-        <i class="boxed-icon fa fa-soccer-ball-o"></i>
-        <h4 class="boxed-title"> Soccer Team </h4>
-        <p class="boxed-text"> Best Sports Features</p>
+        <i class="box-icon fa fa-soccer-ball-o"></i>
+        <h4 class="box-title"> Soccer Team </h4>
+        <p class="box-text"> Best Sports Features</p>
       </div>
     </div>
   </div>
