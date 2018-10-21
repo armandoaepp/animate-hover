@@ -1,6 +1,6 @@
 {
   "name": "animate-hover",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "animate hover: animations based only on css, help classs for frondend ",
   "main": "gulpfile.js",
   "scripts": {
