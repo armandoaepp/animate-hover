@@ -14,15 +14,13 @@
     border-bottom-color: $secondary-color;
     transition: all 0.8s ease-in-out;
     z-index: 11;
-  }
-  .spinner {
     background-color: rgba(0, 0, 0, 0.25);
   }
   &:hover .spinner {
     background-color: rgba(0, 0, 0, 0.6);
   }
   .spinner,
-  .overly {
+  .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -32,7 +30,7 @@
     height: 100%;
     border-radius: 50%;
   }
-  .overly {
+  .overlay {
     z-index: 12;
   }
   .middle {
@@ -49,8 +47,8 @@
   }
 }
 
-.ahvr-circle.effect-rotate {
 
+.ahvr-circle.effect-rotate {
   &:hover .spinner {
     background-clip: content-box;
     -webkit-transform: rotate(180deg);
@@ -61,4 +59,18 @@
   }
 }
 
+.ahvr-circle.effect-opacyity {
+  .spinner {
+    background-color: transparent!important;
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover .overlay {
+    transform: scale(1);
+  }
+
+}
 
