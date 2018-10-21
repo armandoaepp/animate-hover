@@ -296,89 +296,6 @@ zoom image
 .overlay-hidden {
   overflow: hidden; }
 
-/* Background  */
-.ahvr-bg-primary,
-.ahvr-bg-primary .overlay {
-  background: #30A9DE !important; }
-
-.ahvr-bg-secondary,
-.ahvr-bg-secondary .overlay {
-  background: #EFDC05 !important; }
-
-.ahvr-bg-primary-light,
-.ahvr-bg-primary-light .overlay {
-  background: #82CDEE !important; }
-
-.ahvr-bg-primary-dark,
-.ahvr-bg-primary-dark .overlay {
-  background: #0474A5 !important; }
-
-/* Background Transparent  */
-.ahvr-bg-primary-50,
-.ahvr-bg-primary-50 .overlay {
-  background: rgba(48, 169, 222, 0.5) !important; }
-
-.ahvr-bg-secondary-50,
-.ahvr-bg-secondary-50 .overlay {
-  background: rgba(239, 220, 5, 0.5) !important; }
-
-.ahvr-bg-black-50,
-.ahvr-bg-black-50 .overlay {
-  background: rgba(33, 33, 33, 0.5) !important;
-  color: #f3f3f3; }
-
-.ahvr-bg-white-50,
-.ahvr-bg-white-50 .overlay {
-  background: rgba(243, 243, 243, 0.5) !important;
-  color: #212121 !important; }
-  .ahvr-bg-white-50 .middle,
-  .ahvr-bg-white-50 .overlay .middle {
-    color: #212121; }
-
-/* bg-opacities box ======================================== */
-.ahvr-bg-primary-box .overlay {
-  background-color: rgba(48, 169, 222, 0.75) !important; }
-
-.ahvr-bg-primary-box:hover .overlay {
-  background-color: rgba(48, 169, 222, 0.45) !important; }
-
-.ahvr-bg-secondary-box .overlay {
-  background-color: rgba(239, 220, 5, 0.75) !important; }
-
-.ahvr-bg-secondary-box:hover .overlay {
-  background-color: rgba(239, 220, 5, 0.45) !important; }
-
-.ahvr-bg-white-box .overlay {
-  background-color: rgba(243, 243, 243, 0.75) !important; }
-
-.ahvr-bg-white-box:hover .overlay {
-  background-color: rgba(243, 243, 243, 0.45) !important; }
-
-.ahvr-bg-white-box .middle {
-  color: #212121; }
-
-/* bg-opacities circle ======================================== */
-.ahvr-bg-primary-circle .spinner {
-  background-color: rgba(48, 169, 222, 0.25) !important; }
-
-.ahvr-bg-primary-circle:hover .spinner {
-  background-color: rgba(48, 169, 222, 0.6) !important; }
-
-.ahvr-bg-secondary-circle .spinner {
-  background-color: rgba(239, 220, 5, 0.25) !important; }
-
-.ahvr-bg-secondary-circle:hover .spinner {
-  background-color: rgba(239, 220, 5, 0.6) !important; }
-
-.ahvr-bg-white-circle .spinner {
-  background-color: rgba(243, 243, 243, 0.25) !important; }
-
-.ahvr-bg-white-circle:hover .spinner {
-  background-color: rgba(243, 243, 243, 0.6) !important; }
-
-.ahvr-bg-white-circle .middle {
-  color: #212121 !important; }
-
 /* Aninated Middle
 =========================== */
 .ahvr-middle-from-top .middle {
@@ -429,13 +346,13 @@ zoom image
 .ahvr-boxed-image:hover .overlay {
   background-color: rgba(33, 33, 33, 0.45); }
 
-.ahvr-boxed-image .middle .boxed-icon {
+.ahvr-boxed-image .middle .box-icon {
   font-size: 2.5rem; }
 
-.ahvr-boxed-image .middle .boxed-title {
+.ahvr-boxed-image .middle .box-title {
   font-weight: 600; }
 
-.ahvr-boxed-image .middle .boxed-text {
+.ahvr-boxed-image .middle .box-text {
   font-weight: 300;
   font-size: 1rem; }
 
@@ -445,3 +362,45 @@ zoom image
     opacity: 0; }
   .ahvr-boxed-image.overlay-opacity:hover .overlay {
     opacity: 1; }
+
+.ahvr-box-effect-1 {
+  overflow: hidden; }
+  .ahvr-box-effect-1 .overlay {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(33, 33, 33, 0.57);
+    height: 65px;
+    max-height: 65px; }
+  .ahvr-box-effect-1 .box-content {
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(65px); }
+  .ahvr-box-effect-1 .box-content .box-title {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px; }
+  .ahvr-box-effect-1 .box-content .box-text {
+    width: 100%;
+    bottom: 0; }
+  .ahvr-box-effect-1 .image,
+  .ahvr-box-effect-1 .overlay,
+  .ahvr-box-effect-1 .box-content {
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
+  .ahvr-box-effect-1:hover .image {
+    transform: scale(1.05); }
+  .ahvr-box-effect-1:hover .overlay {
+    height: 100%;
+    max-height: 100%; }
+  .ahvr-box-effect-1:hover .box-content {
+    transform: translateY(0); }
+  .ahvr-box-effect-1:hover .box-content .box-title {
+    border-bottom: 1px dotted #fff; }

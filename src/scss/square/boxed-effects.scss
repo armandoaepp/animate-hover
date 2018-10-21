@@ -1,0 +1,54 @@
+.ahvr-box-effect-1 {
+  overflow: hidden;
+
+  .overlay {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba($black, 0.57);
+    height: 65px;
+    max-height: 65px;
+  }
+  .box-content {
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(65px);
+  }
+  .box-content .box-title {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+  }
+  .box-content .box-text {
+    width: 100%;
+    bottom: 0;
+  }
+  .image,
+  .overlay,
+  .box-content {
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  &:hover {
+    .image {
+      transform: scale(1.05);
+    }
+    .overlay {
+      height: 100%;
+      max-height: 100%;
+    }
+    .box-content {
+      transform: translateY(0);
+    }
+    .box-content .box-title {
+      border-bottom: 1px dotted #fff;
+    }
+  }
+}

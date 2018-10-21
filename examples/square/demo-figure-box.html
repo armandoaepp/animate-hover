@@ -19,6 +19,50 @@
 
   <h2>Hover Effect Figure box </h2>
   <p>Hover over the image to see the effect.</p>
+  <style>
+    .ahvr-square .demo {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      transform: translateY(75%);
+      background-color: rgba(48, 169, 222, 0.57) !important;
+
+      -webkit-transition: all 1s ease-out;
+
+      transition: all 1s ease-out;
+    }
+
+    .ahvr-square:hover .demo {
+      transform: translateY(0%);
+    }
+
+    .demo-in {
+      color: #ffffff;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+    }
+
+   .ahvr-square .demo-in .box-text {
+      /* -webkit-transition: height 1s ease-in-out;
+      transition: height 1s ease-in-out;
+      overflow: hidden;
+      height: 0; */
+
+       /* position: absolute; */
+      width: 100%;
+      bottom: 0;
+
+    }
+/*
+    .ahvr-square:hover .demo-in .box-text {
+      height: 100%;
+    } */
+  </style>
 
   <div class="container">
     <div class="row">
@@ -27,6 +71,23 @@
         <hr>
       </div> -->
       <!-- -->
+
+      <div class="col-md-3 mb-3">
+        <a href="#">
+          <div class="ahvr-square ahvr-animated animated-box overlay-hidden">
+            <img class="img-fluid image" src="examples/images/img_avatar.png" alt="Avatar">
+            <div class="overlay demo">
+            </div>
+
+            <div class="middles demo-in ">
+              <h4 class="box-title"> Soccer Team </h4>
+              <p class="box-text animated-slideInUp "> Best Sports Features Best Sports Features Best Sports Features</p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </a>
+      </div>
+
       <div class="col-md-3 mb-3">
         <div class="ahvr-square figure-box">
           <a href="#">
@@ -163,7 +224,7 @@
         <div class="ahvr-square figure-box figure-black-primary">
           <a href="#">
             <figure class="">
-                <img class="image" src="examples/images/img_avatar.png" alt="Avatar">
+              <img class="image" src="examples/images/img_avatar.png" alt="Avatar">
               <figcaption class="info ">
                 <h5 class="info-title"> Titulo combinado.</h5>
               </figcaption>
