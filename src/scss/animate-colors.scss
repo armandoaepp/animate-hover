@@ -28,12 +28,12 @@
 .ahvr-bg-white,
 .ahvr-bg-white .overlay {
   background: $white !important;
-  > * {
+  >* {
     color: $black !important;
   }
 }
 
-/* Background Transparent  */
+/* Background Transparent - 50  */
 
 .ahvr-bg-primary-50,
 .ahvr-bg-primary-50 .overlay {
@@ -57,6 +57,22 @@
   color: $black !important;
   .middle {
     color: $black;
+  }
+}
+
+/* colors combination */
+
+.ahvr-bg-black-primary-50 {
+  background: rgba($black, .5) !important;
+  &:hover .overlay {
+    background: rgba($primary-color, .5) !important;
+  }
+}
+
+.ahvr-bg-black-primary-75 {
+  background: rgba($black, .75) !important;
+  :hover .overlay {
+    background: rgba($primary-color, .75) !important;
   }
 }
 
