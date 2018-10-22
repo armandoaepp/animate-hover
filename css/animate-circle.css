@@ -40,7 +40,8 @@
     width: 100%;
     padding: 1rem; }
 
-.ahvr-circle.effect-rotate:hover .spinner {
+.ahvr-circle.effect-rotate:hover .spinner,
+.ahvr-circle.effect-opacity:hover .spinner {
   background-clip: content-box;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -48,16 +49,18 @@
   -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-.ahvr-circle.effect-opacyity .spinner {
+.ahvr-circle.effect-opacity .spinner {
   background-color: transparent !important; }
 
-.ahvr-circle.effect-opacyity .overlay {
+.ahvr-circle.effect-opacity .overlay {
   background: rgba(0, 0, 0, 0.6);
-  transform: scale(0);
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  border: 10px solid transparent;
+  background-clip: padding-box; }
 
-.ahvr-circle.effect-opacyity:hover .overlay {
-  transform: scale(1); }
+.ahvr-circle.effect-opacity:hover .overlay {
+  opacity: 1; }
 
 .ahvr-item a,
 .ahvr-item a:hover {

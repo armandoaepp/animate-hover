@@ -47,8 +47,8 @@
   }
 }
 
-
-.ahvr-circle.effect-rotate {
+.ahvr-circle.effect-rotate,
+.ahvr-circle.effect-opacity {
   &:hover .spinner {
     background-clip: content-box;
     -webkit-transform: rotate(180deg);
@@ -59,18 +59,18 @@
   }
 }
 
-.ahvr-circle.effect-opacyity {
+.ahvr-circle.effect-opacity {
   .spinner {
-    background-color: transparent!important;
+    background-color: transparent !important;
   }
   .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    transform: scale(0);
+    background: rgba(0, 0, 0, 0.6); // transform: scale(0);
     transition: all 0.5s ease-in-out;
+    opacity: 0;
+    border: $border_width solid transparent;
+    background-clip: padding-box;
   }
   &:hover .overlay {
-    transform: scale(1);
+    opacity: 1;
   }
-
 }
-
