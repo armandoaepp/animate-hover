@@ -60,6 +60,36 @@
   }
 }
 
+/* Background Transparent - 75  */
+
+.ahvr-bg-primary-75,
+.ahvr-bg-primary-75 .overlay {
+  background: rgba($primary-color, .75) !important;
+}
+
+.ahvr-bg-secondary-75,
+.ahvr-bg-secondary-75 .overlay {
+  background: rgba($secondary-color, .75) !important;
+}
+
+.ahvr-bg-black-75,
+.ahvr-bg-black-75 .overlay {
+  background: rgba($black, .75) !important;
+  color: $white;
+}
+
+.ahvr-bg-white-75,
+.ahvr-bg-white-75 .overlay {
+  background: rgba($white, .75) !important;
+  color: $black !important;
+  .middle {
+    color: $black;
+  }
+}
+
+
+
+
 /* colors combination */
 
 .ahvr-bg-black-primary-50 {
@@ -71,7 +101,7 @@
 
 .ahvr-bg-black-primary-75 {
   background: rgba($black, .75) !important;
-  :hover .overlay {
+  &:hover .overlay {
     background: rgba($primary-color, .75) !important;
   }
 }

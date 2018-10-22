@@ -301,6 +301,28 @@
   .ahvr-bg-white-50 .overlay .middle {
     color: #212121; }
 
+/* Background Transparent - 75  */
+.ahvr-bg-primary-75,
+.ahvr-bg-primary-75 .overlay {
+  background: rgba(48, 169, 222, 0.75) !important; }
+
+.ahvr-bg-secondary-75,
+.ahvr-bg-secondary-75 .overlay {
+  background: rgba(239, 220, 5, 0.75) !important; }
+
+.ahvr-bg-black-75,
+.ahvr-bg-black-75 .overlay {
+  background: rgba(33, 33, 33, 0.75) !important;
+  color: #f3f3f3; }
+
+.ahvr-bg-white-75,
+.ahvr-bg-white-75 .overlay {
+  background: rgba(243, 243, 243, 0.75) !important;
+  color: #212121 !important; }
+  .ahvr-bg-white-75 .middle,
+  .ahvr-bg-white-75 .overlay .middle {
+    color: #212121; }
+
 /* colors combination */
 .ahvr-bg-black-primary-50 {
   background: rgba(33, 33, 33, 0.5) !important; }
@@ -309,7 +331,7 @@
 
 .ahvr-bg-black-primary-75 {
   background: rgba(33, 33, 33, 0.75) !important; }
-  .ahvr-bg-black-primary-75 :hover .overlay {
+  .ahvr-bg-black-primary-75:hover .overlay {
     background: rgba(48, 169, 222, 0.75) !important; }
 
 /* bg-opacities box ======================================== */
