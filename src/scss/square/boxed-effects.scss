@@ -17,6 +17,7 @@
     width: 100%;
     bottom: 0;
     transform: translateY(65px);
+    padding: 5px 10px ;
   }
   .box-content .box-title {
     border-bottom: 1px dotted transparent;
@@ -25,7 +26,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 10px;
+    // margin: 5px 10px;
+    margin: 0 ;
   }
   .box-content .box-text {
     width: 100%;
@@ -56,12 +58,12 @@
     .box-content .box-title {
       border-bottom: 1px dotted #fff;
     }
-    // 
+    //
     .box-content.box-center {
       // transform: none;
       // left: 50%;
-      top: 50%; 
-      -webkit-transform: translateY(-50%); 
+      top: 50%;
+      -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
     }
   }

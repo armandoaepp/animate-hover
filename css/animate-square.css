@@ -380,14 +380,15 @@ zoom image
     text-align: center;
     width: 100%;
     bottom: 0;
-    transform: translateY(65px); }
+    transform: translateY(65px);
+    padding: 5px 10px; }
   .ahvr-box-effect-1 .box-content .box-title {
     border-bottom: 1px dotted transparent;
     height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 10px; }
+    margin: 0; }
   .ahvr-box-effect-1 .box-content .box-text {
     width: 100%;
     bottom: 0;
