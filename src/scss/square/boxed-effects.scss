@@ -1,6 +1,5 @@
 .ahvr-box-effect-1 {
   overflow: hidden;
-
   .overlay {
     top: auto;
     bottom: 0;
@@ -20,6 +19,8 @@
     transform: translateY(65px);
   }
   .box-content .box-title {
+    border-bottom: 1px dotted transparent;
+
     height: 65px;
     display: flex;
     align-items: center;
@@ -36,6 +37,10 @@
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
   }
+  .box-content.info-center {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
   &:hover {
     .image {
       transform: scale(1.05);
@@ -49,6 +54,14 @@
     }
     .box-content .box-title {
       border-bottom: 1px dotted #fff;
+    }
+    // 
+    .box-content.box-center {
+      // transform: none;
+      // left: 50%;
+      top: 50%; 
+      -webkit-transform: translateY(-50%); 
+      transform: translateY(-50%);
     }
   }
 }

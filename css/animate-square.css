@@ -382,6 +382,7 @@ zoom image
     bottom: 0;
     transform: translateY(65px); }
   .ahvr-box-effect-1 .box-content .box-title {
+    border-bottom: 1px dotted transparent;
     height: 65px;
     display: flex;
     align-items: center;
@@ -395,6 +396,9 @@ zoom image
   .ahvr-box-effect-1 .box-content {
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out; }
+  .ahvr-box-effect-1 .box-content.info-center {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
   .ahvr-box-effect-1:hover .image {
     transform: scale(1.05); }
   .ahvr-box-effect-1:hover .overlay {
@@ -404,3 +408,7 @@ zoom image
     transform: translateY(0); }
   .ahvr-box-effect-1:hover .box-content .box-title {
     border-bottom: 1px dotted #fff; }
+  .ahvr-box-effect-1:hover .box-content.box-center {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
