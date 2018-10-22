@@ -60,9 +60,7 @@
       border-bottom: 1px dotted #fff;
     }
     //
-    .box-content.box-center {
-      // transform: none;
-      // left: 50%;
+    .box-content.box-center { 
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
