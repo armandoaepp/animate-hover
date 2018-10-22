@@ -1,6 +1,5 @@
 .ahvr-box-effect-1 {
   overflow: hidden;
-
   .overlay {
     top: auto;
     bottom: 0;
@@ -18,23 +17,33 @@
     width: 100%;
     bottom: 0;
     transform: translateY(65px);
+    padding: 5px 10px ;
   }
   .box-content .box-title {
+    border-bottom: 1px dotted transparent;
+
     height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 10px;
+    // margin: 5px 10px;
+    margin: 0 ;
   }
   .box-content .box-text {
     width: 100%;
     bottom: 0;
+    min-height: 50px ;
+    padding-top: 10px;
   }
   .image,
   .overlay,
   .box-content {
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
+  }
+  .box-content.info-center {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   &:hover {
     .image {
@@ -49,6 +58,14 @@
     }
     .box-content .box-title {
       border-bottom: 1px dotted #fff;
+    }
+    //
+    .box-content.box-center {
+      // transform: none;
+      // left: 50%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
   }
 }
