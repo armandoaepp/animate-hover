@@ -3,7 +3,7 @@
 Common CSS helper classes.
 
 ### CSS animate-hover Classes
-Animaciones css Hovers: animaciones con efecto Hover css3
+Animate Hover: Colección de efectos de animaciones hover CSS3 para aplicar a enlaces, logotipos, imágenes destacadas, etc. Animate hover Aplicalo fácilmente a tus propios elementos, modifica o simplemente utiliza para inspirarte. Disponible en CSS, Sass.
 
 
 ## Install
