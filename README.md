@@ -1,4 +1,5 @@
-# animate-hover.css [![npm version](https://badge.fury.io/js/animate.css.svg)](https://www.npmjs.com/package/animate-hover)
+# animate-hover.css [![npm version](https://badge.fury.io/js/animate-hover.svg)](https://www.npmjs.com/package/animate-hover)
+![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 Common CSS helper classes.
 
