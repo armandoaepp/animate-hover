@@ -519,7 +519,8 @@ zoom image
   .ahvr-box-effect-1 .box-content .box-text {
     width: 100%;
     bottom: 0;
-    min-height: 50px; }
+    min-height: 50px;
+    padding-top: 10px; }
   .ahvr-box-effect-1 .image,
   .ahvr-box-effect-1 .overlay,
   .ahvr-box-effect-1 .box-content {
