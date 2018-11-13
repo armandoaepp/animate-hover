@@ -60,10 +60,24 @@
       border-bottom: 1px dotted #fff;
     }
     //
-    .box-content.box-center { 
+    .box-content.box-center {
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
     }
+  }
+}
+
+/* effects opacity hover */
+.ahvr-square.effect-opacity {
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    // transform: scale(0);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+  &:hover .overlay {
+    opacity: 1;
   }
 }
