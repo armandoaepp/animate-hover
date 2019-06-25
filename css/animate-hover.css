@@ -404,18 +404,18 @@
   background: #0474A5 !important;
 }
 
-.ahvr-bg-black,
-.ahvr-bg-black .overlay {
+.ahvr-bg-ahvr-black,
+.ahvr-bg-ahvr-black .overlay {
   background: #212121 !important;
 }
 
-.ahvr-bg-white,
-.ahvr-bg-white .overlay {
+.ahvr-bg-ahvr-white,
+.ahvr-bg-ahvr-white .overlay {
   background: #f3f3f3 !important;
 }
 
-.ahvr-bg-white > *,
-.ahvr-bg-white .overlay > * {
+.ahvr-bg-ahvr-white > *,
+.ahvr-bg-ahvr-white .overlay > * {
   color: #212121 !important;
 }
 
@@ -430,20 +430,20 @@
   background: rgba(239, 220, 5, 0.5) !important;
 }
 
-.ahvr-bg-black-50,
-.ahvr-bg-black-50 .overlay {
+.ahvr-bg-ahvr-black-50,
+.ahvr-bg-ahvr-black-50 .overlay {
   background: rgba(33, 33, 33, 0.5) !important;
   color: #f3f3f3;
 }
 
-.ahvr-bg-white-50,
-.ahvr-bg-white-50 .overlay {
+.ahvr-bg-ahvr-white-50,
+.ahvr-bg-ahvr-white-50 .overlay {
   background: rgba(243, 243, 243, 0.5) !important;
   color: #212121 !important;
 }
 
-.ahvr-bg-white-50 .middle,
-.ahvr-bg-white-50 .overlay .middle {
+.ahvr-bg-ahvr-white-50 .middle,
+.ahvr-bg-ahvr-white-50 .overlay .middle {
   color: #212121;
 }
 
@@ -458,37 +458,37 @@
   background: rgba(239, 220, 5, 0.75) !important;
 }
 
-.ahvr-bg-black-75,
-.ahvr-bg-black-75 .overlay {
+.ahvr-bg-ahvr-black-75,
+.ahvr-bg-ahvr-black-75 .overlay {
   background: rgba(33, 33, 33, 0.75) !important;
   color: #f3f3f3;
 }
 
-.ahvr-bg-white-75,
-.ahvr-bg-white-75 .overlay {
+.ahvr-bg-ahvr-white-75,
+.ahvr-bg-ahvr-white-75 .overlay {
   background: rgba(243, 243, 243, 0.75) !important;
   color: #212121 !important;
 }
 
-.ahvr-bg-white-75 .middle,
-.ahvr-bg-white-75 .overlay .middle {
+.ahvr-bg-ahvr-white-75 .middle,
+.ahvr-bg-ahvr-white-75 .overlay .middle {
   color: #212121;
 }
 
 /* colors combination */
-.ahvr-bg-black-primary-50 {
+.ahvr-bg-ahvr-black-primary-50 {
   background: rgba(33, 33, 33, 0.5) !important;
 }
 
-.ahvr-bg-black-primary-50:hover .overlay {
+.ahvr-bg-ahvr-black-primary-50:hover .overlay {
   background: rgba(48, 169, 222, 0.5) !important;
 }
 
-.ahvr-bg-black-primary-75 {
+.ahvr-bg-ahvr-black-primary-75 {
   background: rgba(33, 33, 33, 0.75) !important;
 }
 
-.ahvr-bg-black-primary-75:hover .overlay {
+.ahvr-bg-ahvr-black-primary-75:hover .overlay {
   background: rgba(48, 169, 222, 0.75) !important;
 }
 
@@ -509,15 +509,15 @@
   background-color: rgba(239, 220, 5, 0.45) !important;
 }
 
-.ahvr-bg-white-box .overlay {
+.ahvr-bg-ahvr-white-box .overlay {
   background-color: rgba(243, 243, 243, 0.75) !important;
 }
 
-.ahvr-bg-white-box:hover .overlay {
+.ahvr-bg-ahvr-white-box:hover .overlay {
   background-color: rgba(243, 243, 243, 0.45) !important;
 }
 
-.ahvr-bg-white-box .middle {
+.ahvr-bg-ahvr-white-box .middle {
   color: #212121;
 }
 
@@ -538,15 +538,15 @@
   background-color: rgba(239, 220, 5, 0.6) !important;
 }
 
-.ahvr-bg-white-circle .spinner {
+.ahvr-bg-ahvr-white-circle .spinner {
   background-color: rgba(243, 243, 243, 0.25) !important;
 }
 
-.ahvr-bg-white-circle:hover .spinner {
+.ahvr-bg-ahvr-white-circle:hover .spinner {
   background-color: rgba(243, 243, 243, 0.6) !important;
 }
 
-.ahvr-bg-white-circle .middle {
+.ahvr-bg-ahvr-white-circle .middle {
   color: #212121 !important;
 }
 
@@ -564,6 +564,7 @@
   position: absolute;
   background-color: #30A9DE;
   overflow: hidden;
+  -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
@@ -585,6 +586,8 @@ zoom image
 =========================================================
 */
 .ahvr-square.ahvr-zoom-image {
+  -webkit-transition: transform .3s;
+  -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
@@ -603,6 +606,7 @@ zoom image
 =========================== */
 .ahvr-middle-from-top .middle {
   top: 0;
+  -webkit-transition: top .3s;
   transition: top .3s;
 }
 
@@ -612,6 +616,7 @@ zoom image
 
 .ahvr-middle-from-bottom .middle {
   top: 100% !important;
+  -webkit-transition: top .3s;
   transition: top .3s;
 }
 
@@ -621,6 +626,8 @@ zoom image
 
 .ahvr-middle-from-left .middle {
   left: 0;
+  -webkit-transition: left 0.3s !important;
+  -webkit-transition: left 0.3 !important;
   transition: left 0.3 !important;
 }
 
@@ -630,6 +637,8 @@ zoom image
 
 .ahvr-middle-from-right .middle {
   left: 100%;
+  -webkit-transition: left 0.3s !important;
+  -webkit-transition: left 0.3 !important;
   transition: left 0.3 !important;
 }
 
@@ -645,6 +654,7 @@ zoom image
   height: 100%;
   width: 100%;
   background-color: rgba(33, 33, 33, 0.75);
+  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
 
@@ -706,8 +716,11 @@ zoom image
 .ahvr-box-effect-1 .box-content .box-title {
   border-bottom: 1px dotted transparent;
   height: 65px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
   margin: 0;
 }
@@ -722,10 +735,12 @@ zoom image
 .ahvr-box-effect-1 .image,
 .ahvr-box-effect-1 .overlay,
 .ahvr-box-effect-1 .box-content {
+  -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
 
 .ahvr-box-effect-1 .box-content.info-center {
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
@@ -768,9 +783,12 @@ zoom image
 }
 
 .ahvr-circle .spinner {
-  border: 10px solid #30A9DE;
+  border-width: 10px;
+  border-color: #30A9DE;
+  border-style: solid;
   border-right-color: #EFDC05;
   border-bottom-color: #EFDC05;
+  -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.25);
@@ -821,9 +839,12 @@ zoom image
 
 .ahvr-circle.effect-opacity .overlay {
   background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   opacity: 0;
-  border: 10px solid transparent;
+  border-width: 10px;
+  border-color: transparent;
+  border-style: solid;
   background-clip: padding-box;
 }
 

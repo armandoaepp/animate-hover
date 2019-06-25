@@ -12,9 +12,12 @@
 }
 
 .ahvr-circle .spinner {
-  border: 10px solid #30A9DE;
+  border-width: 10px;
+  border-color: #30A9DE;
+  border-style: solid;
   border-right-color: #EFDC05;
   border-bottom-color: #EFDC05;
+  -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.25);
@@ -65,9 +68,12 @@
 
 .ahvr-circle.effect-opacity .overlay {
   background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   opacity: 0;
-  border: 10px solid transparent;
+  border-width: 10px;
+  border-color: transparent;
+  border-style: solid;
   background-clip: padding-box;
 }
 
