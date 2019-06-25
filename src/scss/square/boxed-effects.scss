@@ -67,3 +67,15 @@
     }
   }
 }
+
+/* effects opacity hover */
+.ahvr-square.effect-opacity {
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+  &:hover .overlay {
+    opacity: 1;
+  }
+}
