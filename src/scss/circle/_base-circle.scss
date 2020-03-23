@@ -1,6 +1,7 @@
 .ahvr-circle {
   position: relative;
-  padding: $border_width;
+  padding: $ahvr-border-width;
+
   .image {
     display: block;
     width: 100%;
@@ -8,17 +9,22 @@
     border-radius: 50%;
     z-index: 10;
   }
+
   .spinner {
-    border: $border_width solid $primary-color;
-    border-right-color: $secondary-color;
-    border-bottom-color: $secondary-color;
+    border-width: $ahvr-border-width;
+    border-color: $ahvr-primary-color;
+    border-style: solid;
+    border-right-color: $ahvr-secondary-color;
+    border-bottom-color: $ahvr-secondary-color;
     transition: all 0.8s ease-in-out;
     z-index: 11;
     background-color: rgba(0, 0, 0, 0.25);
   }
+
   &:hover .spinner {
     background-color: rgba(0, 0, 0, 0.6);
   }
+
   .spinner,
   .overlay {
     position: absolute;
@@ -30,11 +36,13 @@
     height: 100%;
     border-radius: 50%;
   }
+
   .overlay {
     z-index: 12;
   }
+
   .middle {
-    color: $white;
+    color: $ahvr-white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,13 +71,18 @@
   .spinner {
     background-color: transparent !important;
   }
+
   .overlay {
     background: rgba(0, 0, 0, 0.6); // transform: scale(0);
     transition: all 0.5s ease-in-out;
     opacity: 0;
-    border: $border_width solid transparent;
+    // border: $ahvr-border-width solid transparent;
+    border-width: $ahvr-border-width;
+    border-color: transparent;
+    border-style: solid;
     background-clip: padding-box;
   }
+
   &:hover .overlay {
     opacity: 1;
   }

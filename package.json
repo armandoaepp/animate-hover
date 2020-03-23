@@ -1,19 +1,23 @@
 {
   "name": "animate-hover",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "animate hover: animations based only on css, help classs for frondend ",
   "main": "gulpfile.js",
   "scripts": {
     "clean": "rimraf vendor",
     "vendor": "vendor-copy",
-    "animate": "node-sass src/scss/animate-hover.scss css/animate-hover.css",
-    "circle": "node-sass src/scss/animate-circle.scss css/animate-circle.css",
-    "square": "node-sass src/scss/animate-square.scss css/animate-square.css",
-    "dev": "npm run vendor & npm run animate & npm run circle & npm run square",
-    "animate-min": "node-sass src/scss/animate-hover.scss css/animate-hover.min.css --output-style compressed",
-    "circle-min": "node-sass src/scss/animate-circle.scss css/animate-circle.min.css --output-style compressed",
-    "square-min": "node-sass src/scss/animate-square.scss css/animate-square.min.css --output-style compressed",
-    "prod": "npm run vendor & npm run animate-min & npm run circle-min & npm run square-min"
+    "css": "npm-run-all vendor css-compile css-prefix-main css-minify",
+    "css-compile": "npm-run-all --parallel css-compile-*",
+    "css-compile-main": "node-sass  --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/animate-hover.scss css/animate-hover.css",
+    "css-compile-circle": "node-sass  --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/animate-circle.scss css/animate-circle.css",
+    "css-compile-square": "node-sass  --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/animate-square.scss css/animate-square.css",
+    "css-minify": "npm-run-all --parallel css-minify-*",
+    "css-minify-main": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output css/animate-hover.min.css css/animate-hover.css",
+    "css-minify-circle": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output css/animate-circle.min.css css/animate-circle.css",
+    "css-minify-square": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output css/animate-square.min.css css/animate-square.css",
+    "css-prefix-main": "postcss --config build/postcss.config.js --replace \"css/*.css\" \"!css/*.min.css\"",
+    "dev": "npm run vendor & npm run css",
+    "prod": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -27,13 +31,20 @@
   "email": "armandoaepp@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "animate.css": "^3.7.0"
+    "animate.css": "^3.7.2"
   },
   "homepage": "https://armandoaepp.github.io/animate-hover/index.html",
   "devDependencies": {
-    "node-sass": "^4.9.4",
-    "rimraf": "^2.6.2",
-    "vendor-copy": "^2.0.0"
+    "autoprefixer": "^9.6.0",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
+    "vendor-copy": "^2.0.0",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
   },
   "vendorCopy": [
     {

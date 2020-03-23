@@ -1,8 +1,6 @@
 .ahvr-animated {
   &.animated-box:hover>* {
-    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
 }
@@ -11,338 +9,271 @@
   /* Attention Seekers */
   &:hover .animated-bounce,
   &:hover.animated-bounce>* {
-    -webkit-animation-name: bounce;
     animation-name: bounce;
   }
   &:hover .animated-flash,
   &:hover.animated-flash>* {
-    -webkit-animation-name: flash;
     animation-name: flash;
   }
   &:hover .animated-pulse,
   &:hover.animated-pulse>* {
-    -webkit-animation-name: pulse;
     animation-name: pulse;
   }
   &:hover .animated-rubberBand,
   &:hover.animated-rubberBand>* {
-    -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
   }
   &:hover .animated-shake,
   &:hover.animated-shake>* {
-    -webkit-animation-name: shake;
     animation-name: shake;
   }
   &:hover .animated-swing,
   &:hover.animated-swing>* {
-    -webkit-animation-name: swing;
     animation-name: swing;
   }
   &:hover .animated-tada,
   &:hover.animated-tada>* {
-    -webkit-animation-name: tada;
     animation-name: tada;
   }
   &:hover .animated-wobble,
   &:hover.animated-wobble>* {
-    -webkit-animation-name: wobble;
     animation-name: wobble;
   }
   &:hover .animated-jello,
   &:hover.animated-jello>* {
-    -webkit-animation-name: jello;
     animation-name: jello;
   }
   /* Rotating Entrances */
   &:hover .animated-rotateIn,
   &:hover.animated-rotateIn>* {
-    -webkit-animation-name: rotateIn;
     animation-name: rotateIn;
   }
   &:hover .animated-rotateInDownLeft,
   &:hover.animated-rotateInDownLeft>* {
-    -webkit-animation-name: rotateInDownLeft;
     animation-name: rotateInDownLeft;
   }
   &:hover .animated-rotateInDownRight,
   &:hover.animated-rotateInDownRight>* {
-    -webkit-animation-name: rotateInDownRight;
     animation-name: rotateInDownRight;
   }
   &:hover .animated-rotateInUpLeft,
   &:hover.animated-rotateInUpLeft>* {
-    -webkit-animation-name: rotateInUpLeft;
     animation-name: rotateInUpLeft;
   }
   &:hover .animated-rotateInUpRight,
   &:hover.animated-rotateInUpRight>* {
-    -webkit-animation-name: rotateInUpRight;
     animation-name: rotateInUpRight;
   }
   /* bounces */
   &:hover .animated-bounceIn,
   &:hover.animated-bounceIn>* {
-    -webkit-animation-duration: 0.75s;
     animation-duration: 0.75s;
-    -webkit-animation-name: bounceIn;
     animation-name: bounceIn;
   }
   &:hover .animated-bounceInDown,
   &:hover.animated-bounceInDown>* {
-    -webkit-animation-name: bounceInDown;
     animation-name: bounceInDown;
   }
   &:hover .animated-bounceInLeft,
   &:hover.animated-bounceInLeft>* {
-    -webkit-animation-name: bounceInLeft;
     animation-name: bounceInLeft;
   }
   &:hover .animated-bounceInRight,
   &:hover.animated-bounceInRight>* {
-    -webkit-animation-name: bounceInRight;
     animation-name: bounceInRight;
   }
   &:hover .animated-bounceInUp,
   &:hover.animated-bounceInUp>* {
-    -webkit-animation-name: bounceInUp;
     animation-name: bounceInUp;
   }
   &:hover .animated-bounceOut,
   &:hover.animated-bounceOut>* {
-    -webkit-animation-duration: 0.75s;
     animation-duration: 0.75s;
-    -webkit-animation-name: bounceOut;
     animation-name: bounceOut;
   }
   &:hover .animated-bounceOutDown,
   &:hover.animated-bounceOutDown>* {
-    -webkit-animation-name: bounceOutDown;
     animation-name: bounceOutDown;
   }
   &:hover .animated-bounceOutLeft,
   &:hover.animated-bounceOutLeft>* {
-    -webkit-animation-name: bounceOutLeft;
     animation-name: bounceOutLeft;
   }
   &:hover .animated-bounceOutRight,
   &:hover.animated-bounceOutRight>* {
-    -webkit-animation-name: bounceOutRight;
     animation-name: bounceOutRight;
   }
   &:hover .animated-bounceOutUp,
   &:hover.animated-bounceOutUp>* {
-    -webkit-animation-name: bounceOutUp;
     animation-name: bounceOutUp;
   }
   /* fades */
   &:hover .animated-fadeIn,
   &:hover.animated-fadeIn {
-    -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
   }
   &:hover .animated-fadeInDown,
   &:hover.animated-fadeInDown {
-    -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
   }
   &:hover .animated-fadeInDownBig,
   &:hover.animated-fadeInDownBig {
-    -webkit-animation-name: fadeInDownBig;
     animation-name: fadeInDownBig;
   }
   &:hover .animated-fadeInLeft,
   &:hover.animated-fadeInLeft {
-    -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
   }
   &:hover .animated-fadeInLeftBig,
   &:hover.animated-fadeInLeftBig {
-    -webkit-animation-name: fadeInLeftBig;
     animation-name: fadeInLeftBig;
   }
   &:hover .animated-fadeInRight,
   &:hover.animated-fadeInRight {
-    -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
   }
   &:hover .animated-fadeInRightBig,
   &:hover.animated-fadeInRightBig {
-    -webkit-animation-name: fadeInRightBig;
     animation-name: fadeInRightBig;
   }
   &:hover .animated-fadeInUp,
   &:hover.animated-fadeInUp {
-    -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
   }
   &:hover .animated-fadeInUpBig,
   &:hover.animated-fadeInUpBig {
-    -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
   }
   &:hover .animated-fadeOut,
   &:hover.animated-fadeOut {
-    -webkit-animation-name: fadeOut;
     animation-name: fadeOut;
   }
   &:hover .animated-fadeOutDown,
   &:hover.animated-fadeOutDown {
-    -webkit-animation-name: fadeOutDown;
     animation-name: fadeOutDown;
   }
   &:hover .animated-fadeOutDownBig,
   &:hover.animated-fadeOutDownBig {
-    -webkit-animation-name: fadeOutDownBig;
     animation-name: fadeOutDownBig;
   }
   &:hover .animated-fadeOutLeft,
   &:hover.animated-fadeOutLeft {
-    -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
   }
   &:hover .animated-fadeOutLeftBig,
   &:hover.animated-fadeOutLeftBig {
-    -webkit-animation-name: fadeOutLeftBig;
     animation-name: fadeOutLeftBig;
   }
   &:hover .animated-fadeOutRight,
   &:hover.animated-fadeOutRight {
-    -webkit-animation-name: fadeOutRight;
     animation-name: fadeOutRight;
   }
   &:hover .animated-fadeOutRightBig,
   &:hover.animated-fadeOutRightBig {
-    -webkit-animation-name: fadeOutRightBig;
     animation-name: fadeOutRightBig;
   }
   &:hover .animated-fadeOutUp,
   &:hover.animated-fadeOutUp {
-    -webkit-animation-name: fadeOutUp;
     animation-name: fadeOutUp;
   }
   &:hover .animated-fadeOutUpBig,
   &:hover.animated-fadeOutUpBig {
-    -webkit-animation-name: fadeOutUpBig;
     animation-name: fadeOutUpBig;
   }
   /* Rotating Exits */
   &:hover .animated-rotateOut,
   &:hover.rotateOu.animated->* {
-    -webkit-animation-name: rotateOut;
     animation-name: rotateOut;
   }
   &:hover .animated-rotateOutDownLeft,
   &:hover.animated-rotateOutDownLeft>* {
-    -webkit-animation-name: rotateOutDownLeft;
     animation-name: rotateOutDownLeft;
   }
   &:hover .animated-rotateOutDownRight,
   &:hover.animated-rotateOutDownRight>* {
-    -webkit-animation-name: rotateOutDownRight;
     animation-name: rotateOutDownRight;
   }
   &:hover .animated-rotateOutUpLeft,
   &:hover.animated-rotateOutUpLeft>* {
-    -webkit-animation-name: rotateOutUpLeft;
     animation-name: rotateOutUpLeft;
   }
   &:hover .animated-rotateOutUpRight,
   &:hover.animated-rotateOutUpRight>* {
-    -webkit-animation-name: rotateOutUpRight;
     animation-name: rotateOutUpRight;
   }
   /* Sliding Entrances */
   &:hover .animated-slideInDown,
   &:hover.animated-slideInDown>* {
-    -webkit-animation-name: slideInDown;
     animation-name: slideInDown;
   }
   &:hover .animated-slideInLeft,
   &:hover.animated-slideInLeft>* {
-    -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
   }
   &:hover .animated-slideInRight,
   &:hover.animated-slideInRight>* {
-    -webkit-animation-name: slideInRight;
     animation-name: slideInRight;
   }
   &:hover .animated-slideInUp,
   &:hover.animated-slideInUp>* {
-    -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
   }
   /* Sliding Exits */
   &:hover .animated-slideOutDown,
   &:hover.animated-slideOutDown>* {
-    -webkit-animation-name: slideOutDown;
     animation-name: slideOutDown;
   }
   &:hover .animated-slideOutLeft,
   &:hover.animated-slideOutLeft>* {
-    -webkit-animation-name: slideOutLeft;
     animation-name: slideOutLeft;
   }
   &:hover .animated-slideOutRight,
   &:hover.animated-slideOutRight>* {
-    -webkit-animation-name: slideOutRight;
     animation-name: slideOutRight;
   }
   &:hover .animated-slideOutUp,
   &:hover.animated-slideOutUp>* {
-    -webkit-animation-name: slideOutUp;
     animation-name: slideOutUp;
   }
   /*Zoom Entrances  */
   &:hover .animated-zoomIn,
   &:hover.animated-zoomIn>* {
-    -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
   }
   &:hover .zoomInDown,
   &:hover.zoomInDown {
-    -webkit-animation-name: zoomInDown;
     animation-name: zoomInDown;
   }
   &:hover .zoomInLeft,
   &:hover.zoomInLeft {
-    -webkit-animation-name: zoomInLeft;
     animation-name: zoomInLeft;
   }
   &:hover .zoomInRight,
   &:hover.zoomInRight {
-    -webkit-animation-name: zoomInRight;
     animation-name: zoomInRight;
   }
   &:hover .zoomInUp,
   &:hover.zoomInUp {
-    -webkit-animation-name: zoomInUp;
     animation-name: zoomInUp;
   }
   &:hover .zoomOut,
   &:hover.zoomOut {
-    -webkit-animation-name: zoomOut;
     animation-name: zoomOut;
   }
   &:hover .zoomOutDown,
   &:hover.zoomOutDown {
-    -webkit-animation-name: zoomOutDown;
     animation-name: zoomOutDown;
   }
   &:hover .zoomOutLeft,
   &:hover.zoomOutLeft {
-    -webkit-animation-name: zoomOutLeft;
     animation-name: zoomOutLeft;
   }
   &:hover .zoomOutRight,
   &:hover.zoomOutRight {
-    -webkit-animation-name: zoomOutRight;
     animation-name: zoomOutRight;
   }
   &:hover .zoomOutUp,
   &:hover.zoomOutUp {
-    -webkit-animation-name: zoomOutUp;
     animation-name: zoomOutUp;
   }
 }
