@@ -714,7 +714,7 @@ zoom image
 .ahvr-box-effect-1 .image,
 .ahvr-box-effect-1 .overlay,
 .ahvr-box-effect-1 .box-content {
-  transition: all 1.5s ease-out;
+  transition: all 1s ease-out;
 }
 
 .ahvr-box-effect-1 .box-content .box-text {
