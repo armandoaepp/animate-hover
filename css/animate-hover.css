@@ -564,7 +564,6 @@
   position: absolute;
   background-color: #30A9DE;
   overflow: hidden;
-  -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
@@ -573,7 +572,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
@@ -586,15 +584,10 @@ zoom image
 =========================================================
 */
 .ahvr-square.ahvr-zoom-image {
-  -webkit-transition: transform .3s;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
   transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 
 .ahvr-square.ahvr-zoom-image:hover {
-  -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -606,7 +599,6 @@ zoom image
 =========================== */
 .ahvr-middle-from-top .middle {
   top: 0;
-  -webkit-transition: top .3s;
   transition: top .3s;
 }
 
@@ -616,7 +608,6 @@ zoom image
 
 .ahvr-middle-from-bottom .middle {
   top: 100% !important;
-  -webkit-transition: top .3s;
   transition: top .3s;
 }
 
@@ -626,8 +617,6 @@ zoom image
 
 .ahvr-middle-from-left .middle {
   left: 0;
-  -webkit-transition: left 0.3s !important;
-  -webkit-transition: left 0.3 !important;
   transition: left 0.3 !important;
 }
 
@@ -637,8 +626,6 @@ zoom image
 
 .ahvr-middle-from-right .middle {
   left: 100%;
-  -webkit-transition: left 0.3s !important;
-  -webkit-transition: left 0.3 !important;
   transition: left 0.3 !important;
 }
 
@@ -654,7 +641,6 @@ zoom image
   height: 100%;
   width: 100%;
   background-color: rgba(33, 33, 33, 0.75);
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
 
@@ -704,23 +690,16 @@ zoom image
 
 .ahvr-box-effect-1 .box-content {
   color: #ffffff;
-  position: absolute;
   text-align: center;
   width: 100%;
-  bottom: 0;
-  -webkit-transform: translateY(65px);
-  transform: translateY(65px);
   padding: 5px 10px;
 }
 
 .ahvr-box-effect-1 .box-content .box-title {
   border-bottom: 1px dotted transparent;
-  height: 65px;
-  display: -webkit-box;
+  min-height: 65px;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   margin: 0;
 }
@@ -735,18 +714,19 @@ zoom image
 .ahvr-box-effect-1 .image,
 .ahvr-box-effect-1 .overlay,
 .ahvr-box-effect-1 .box-content {
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+.ahvr-box-effect-1 .box-content .box-text {
+  transition: all 2s ease-out;
 }
 
 .ahvr-box-effect-1 .box-content.info-center {
-  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
 .ahvr-box-effect-1:hover .image {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  transform: scale(1.09);
 }
 
 .ahvr-box-effect-1:hover .overlay {
@@ -754,25 +734,28 @@ zoom image
   max-height: 100%;
 }
 
-.ahvr-box-effect-1:hover .box-content {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+.ahvr-box-effect-1:hover .overlay.box-center {
+  display: flex;
+  align-items: center;
+}
+
+.ahvr-box-effect-1:hover .overlay.box-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ahvr-box-effect-1:hover .overlay.box-end {
+  display: flex;
+  align-items: flex-end;
 }
 
 .ahvr-box-effect-1:hover .box-content .box-title {
   border-bottom: 1px dotted #fff;
 }
 
-.ahvr-box-effect-1:hover .box-content.box-center {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 /* effects opacity hover */
 .ahvr-square.effect-opacity .overlay {
   background: rgba(0, 0, 0, 0.6);
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   opacity: 0;
 }
@@ -800,7 +783,6 @@ zoom image
   border-style: solid;
   border-right-color: #EFDC05;
   border-bottom-color: #EFDC05;
-  -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.25);
@@ -831,7 +813,6 @@ zoom image
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
@@ -841,7 +822,6 @@ zoom image
 .ahvr-circle.effect-rotate:hover .spinner,
 .ahvr-circle.effect-opacity:hover .spinner {
   background-clip: content-box;
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -851,7 +831,6 @@ zoom image
 
 .ahvr-circle.effect-opacity .overlay {
   background: rgba(0, 0, 0, 0.6);
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   opacity: 0;
   border-width: 10px;
@@ -863,4 +842,3 @@ zoom image
 .ahvr-circle.effect-opacity:hover .overlay {
   opacity: 1;
 }
-/*# sourceMappingURL=animate-hover.css.map */
