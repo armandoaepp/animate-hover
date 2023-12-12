@@ -28,6 +28,7 @@
 .ahvr-bg-ahvr-white,
 .ahvr-bg-ahvr-white .overlay {
   background: $ahvr-white !important;
+
   >* {
     color: $ahvr-black !important;
   }
@@ -55,6 +56,7 @@
 .ahvr-bg-ahvr-white-50 .overlay {
   background: rgba($ahvr-white, .5) !important;
   color: $ahvr-black !important;
+
   .middle {
     color: $ahvr-black;
   }
@@ -82,6 +84,7 @@
 .ahvr-bg-ahvr-white-75 .overlay {
   background: rgba($ahvr-white, .75) !important;
   color: $ahvr-black !important;
+
   .middle {
     color: $ahvr-black;
   }
@@ -91,6 +94,7 @@
 
 .ahvr-bg-ahvr-black-primary-50 {
   background: rgba($ahvr-black, .5) !important;
+
   &:hover .overlay {
     background: rgba($ahvr-primary-color, .5) !important;
   }
@@ -98,6 +102,7 @@
 
 .ahvr-bg-ahvr-black-primary-75 {
   background: rgba($ahvr-black, .75) !important;
+
   &:hover .overlay {
     background: rgba($ahvr-primary-color, .75) !important;
   }
@@ -109,6 +114,7 @@
   .overlay {
     background-color: rgba($ahvr-primary-color, .75) !important;
   }
+
   &:hover .overlay {
     background-color: rgba($ahvr-primary-color, .45) !important;
   }
@@ -118,6 +124,7 @@
   .overlay {
     background-color: rgba($ahvr-secondary-color, .75) !important;
   }
+
   &:hover .overlay {
     background-color: rgba($ahvr-secondary-color, .45) !important;
   }
@@ -127,9 +134,11 @@
   .overlay {
     background-color: rgba($ahvr-white, .75) !important;
   }
+
   &:hover .overlay {
     background-color: rgba($ahvr-white, .45) !important;
   }
+
   .middle {
     color: $ahvr-black;
   }
@@ -141,6 +150,7 @@
   .spinner {
     background-color: rgba($ahvr-primary-color, 0.25) !important;
   }
+
   &:hover .spinner {
     background-color: rgba($ahvr-primary-color, 0.6) !important;
   }
@@ -150,6 +160,7 @@
   .spinner {
     background-color: rgba($ahvr-secondary-color, 0.25) !important;
   }
+
   &:hover .spinner {
     background-color: rgba($ahvr-secondary-color, 0.6) !important;
   }
@@ -159,9 +170,11 @@
   .spinner {
     background-color: rgba($ahvr-white, 0.25) !important;
   }
+
   &:hover .spinner {
     background-color: rgba($ahvr-white, 0.6) !important;
   }
+
   .middle {
     color: $ahvr-black !important;
   }

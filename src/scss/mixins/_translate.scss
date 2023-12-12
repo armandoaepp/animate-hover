@@ -9,23 +9,23 @@
 /// Rotate Mixin: Rotate an element to a certain deg
 /// @param {Percentage} $value[] Degree of rotation
 @mixin translate($value) {
-	transform:translate($value );
+  transform: translate($value);
 }
 
 /// translateX Mixin: translate an element to a certain deg on X-Axis
 /// @param {Percentage} $value[] Degree of rotation
 @mixin translateX($value) {
-	transform:translateX($value);
+  transform: translateX($value);
 }
 
 /// translateY Mixin: translate an element to a certain deg on Y-Axis
 /// @param {Percentage} $value[] Degree of rotation
 @mixin translateY($value) {
-	transform:translateY($value);
+  transform: translateY($value);
 }
 
 /// translateZ Mixin: translate an element to a certain deg on Z-Axis
 /// @param {Percentage} $value[] Degree of rotation
 @mixin translateZ($value) {
-	transform:translateZ($value);
+  transform: translateZ($value);
 }
