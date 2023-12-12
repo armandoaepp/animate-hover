@@ -1,18 +1,31 @@
 {
   "name": "animate-hover",
-  "version": "1.1.6",
+  "version": "1.1.5",
   "description": "animate hover: animations based only on css, help classs for frondend ",
   "main": "gulpfile.js",
   "scripts": {
+    "clean": "rimraf vendor",
+    "vendor": "vendor-copy",
+    "css": "npm-run-all vendor css-compile css-prefix-main css-minify",
+    "css-compile": "npm-run-all --parallel css-compile-*",
+    "css-compile-main": "node-sass  --output-style expanded --precision 6 src/scss/animate-hover.scss css/animate-hover.css",
+    "css-compile-circle": "node-sass  --output-style expanded --precision 6 src/scss/animate-circle.scss css/animate-circle.css",
+    "css-compile-square": "node-sass  --output-style expanded --precision 6 src/scss/animate-square.scss css/animate-square.css",
+    "css-minify": "npm-run-all --parallel css-minify-*",
+    "css-minify-main": "cleancss --level 1 --format breaksWith=lf --output css/animate-hover.min.css css/animate-hover.css",
+    "css-minify-circle": "cleancss --level 1 --format breaksWith=lf --output css/animate-circle.min.css css/animate-circle.css",
+    "css-minify-square": "cleancss --level 1 --format breaksWith=lf --output css/animate-square.min.css css/animate-square.css",
+    "css-prefix-main": "postcss --config build/postcss.config.js --replace \"css/*.css\" \"!css/*.min.css\"",
+    "dev": "npm run vendor & npm run css",
+    "prod": "npm run dev"
+
     "css-dev": "sass --no-source-map --style=expanded src/scss/animate-hover.scss:css/animate-hover.css",
     "css-prod": "sass --no-source-map --style=compressed src/scss/animate-hover.scss:css/animate-hover.min.css",
-    "css-prod-circle": "sass --no-source-map --style=compressed src/scss/animate-circle.scss:css/animate-circle.min.css",
-    "css-prod-square": "sass --no-source-map --style=compressed src/scss/animate-square.scss:css/animate-square.min.css",
     "sass-dev": "sass --update --style=expanded src/scss/animate-hover.scss:css/animate-hover.css",
     "sass-watch": "sass --watch --update --style=expanded src/scss/animate-hover.scss:css/animate-hover.css",
     "css-postcss": "postcss --config build/postcss.config.js --replace \"css/*.css\" \"!css/*.min.css\"",
     "dev": " npm run sass-dev ",
-    "prod": "npm run css-dev && npm run css-prod && npm run css-prod-circle && npm run css-prod-square && npm run css-postcss "
+    "prod": "npm run css-dev && npm run css-prod && npm run css-postcss "
   },
   "repository": {
     "type": "git",
